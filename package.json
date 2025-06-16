@@ -1,0 +1,32 @@
+{
+  "name": "ecom-backend",
+  "version": "1.0.0",
+  "description": "API services for ecom react frontend",
+  "homepage": "https://github.com/V-bhoy/ecommerce-backend#readme",
+  "bugs": {
+    "url": "https://github.com/V-bhoy/ecommerce-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V-bhoy/ecommerce-backend.git"
+  },
+  "license": "ISC",
+  "author": "Vaishali Bhoyar",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "knex": "^3.1.0",
+    "pg": "^8.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
