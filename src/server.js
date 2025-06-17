@@ -1,5 +1,5 @@
 import appConfig from "./index.js"
-import {config} from "./config.js";
+import {config} from "./config/config.js";
 import createAppRouter from "./routes/index.js";
 
 const {app, env} = appConfig;
