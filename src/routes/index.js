@@ -1,7 +1,15 @@
 import express from "express";
-import productRouter from "./product.routes.js";
+import {createProductRouter} from "./product.routes.js";
+import {createAuthRouter} from "./auth.routes.js";
 
-const router = express.Router();
-router.use("/products", productRouter);
 
-export default router;
+export default function createAppRouter(){
+    const router = express.Router();
+    const authRoutes = createAuthRouter();
+    const productRoutes = createProductRouter();
+
+    router.use("/auth", authRoutes);
+    router.use("/products", productRoutes);
+
+    return router;
+}

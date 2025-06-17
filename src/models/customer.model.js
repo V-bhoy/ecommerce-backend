@@ -2,14 +2,16 @@ import appConfig from "../index.js";
 
 const {db} = appConfig;
 
-const getCustomerById = (id)=>db("customers")
+export const findById = (id)=>db("customers")
     .select("*")
     .where({id})
     .first();
 
-const getAllCustomers = ()=>db("customers").select("*");
+export const findByEmail = (email)=>db("customers")
+    .select("*")
+    .where({email})
+    .first();
 
-export {
-    getCustomerById,
-    getAllCustomers
-}
+export const findAll = ()=>db("customers").select("*");
+
+export const save = (data)=>db("customers").insert(data).returning("id");
