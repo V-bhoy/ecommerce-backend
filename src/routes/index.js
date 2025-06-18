@@ -1,6 +1,7 @@
 import express from "express";
 import {createProductRouter} from "./product.routes.js";
 import {createAuthRouter} from "./auth.routes.js";
+import {authMiddleware} from "../middlewares/auth-middleware.js";
 
 
 export default function createAppRouter(){
@@ -9,7 +10,7 @@ export default function createAppRouter(){
     const productRoutes = createProductRouter();
 
     router.use("/auth", authRoutes);
-    router.use("/products", productRoutes);
+    router.use("/products", authMiddleware ,productRoutes);
 
     return router;
 }
