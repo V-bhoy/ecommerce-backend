@@ -3,7 +3,7 @@ import {config} from "./config/config.js";
 import createAppRouter from "./routes/index.js";
 
 const {app, env} = appConfig;
-const PORT = config[env].PORT || 8080;
+const PORT = 8080;
 
 const appRoutes = createAppRouter();
 

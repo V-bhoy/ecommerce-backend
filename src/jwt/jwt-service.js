@@ -13,7 +13,7 @@ export const verifyAccessToken = (accessToken)=>{
 
 export const generateRefreshToken = (payload)=>{
     return jwt.sign(payload, process.env.REFRESH_TOKEN_SECRET, {
-        expiresIn: "30m"
+        expiresIn: "24h"
     })
 }
 
