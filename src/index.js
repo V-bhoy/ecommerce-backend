@@ -18,8 +18,6 @@ app.use(cors({
     credentials: true
 }));
 
-
-
 const appConfig = {
     app,
     db,

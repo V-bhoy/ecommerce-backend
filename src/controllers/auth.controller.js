@@ -1,11 +1,13 @@
 import {verifyEmail} from "../util/verify-email.js";
 import * as CustomerModel from "../models/customer.model.js";
+import * as OtpVerificationModel from "../models/otpVerification.model.js"
 import * as jwtService from "../jwt/jwt-service.js";
 import bcrypt from "bcryptjs";
 import appConfig from "../index.js";
 import {sendWelcomeEmail} from "../util/send-welcome-email.js";
 import {generateOtp} from "../util/generate-otp.js";
 import {generateAccessToken, verifyRefreshToken} from "../jwt/jwt-service.js";
+import {sendOtp} from "../util/send-otp.js";
 
 export const registerCustomer = async (req, res) => {
     const {firstName, lastName, email, password} = req.body;
@@ -52,7 +54,13 @@ export const registerCustomer = async (req, res) => {
         return res.status(201).json({
             success: true,
             message: "Registration successful!",
-            accessToken
+            accessToken,
+            user: {
+                id,
+                firstName,
+                lastName,
+                email
+            }
         })
 
     } catch (err) {
@@ -106,7 +114,13 @@ export const loginCustomer = async (req, res) => {
         return res.status(201).json({
             success: true,
             message: "Login successful!",
-            accessToken
+            accessToken,
+            user: {
+                id: existingCustomer?.id,
+                firstName: existingCustomer?.first_name,
+                lastName: existingCustomer?.last_name,
+                email
+            }
         })
 
     } catch (err) {
@@ -129,7 +143,6 @@ export const logoutCustomer = async (req, res) => {
             message: "Logout successful!"
         })
     } catch (err) {
-        console.log(err);
         res.status(500).json({
             message: "Server Error"
         })
@@ -146,10 +159,17 @@ export const refreshToken = async (req, res) => {
     }
     try {
         const user = verifyRefreshToken(refreshToken);
+        const userDetails = CustomerModel.findByEmail(user.email);
         const newAccessToken = generateAccessToken({id: user.id, email: user.email});
         return res.status(200).json({
             success: true,
-            accessToken: newAccessToken
+            accessToken: newAccessToken,
+            user: {
+                id: user.id,
+                firstName: userDetails?.firstName,
+                lastName: userDetails?.lastName,
+                email: user.email
+            }
         })
     } catch (err) {
         console.log(err)
@@ -160,7 +180,7 @@ export const refreshToken = async (req, res) => {
     }
 }
 
-export const verifyOtp = async (req, res) => {
+export const requestOtp = async (req, res) => {
     const {email} = req.body;
     if (!email || !verifyEmail(email)) {
         return res.status(400).json({
@@ -176,12 +196,88 @@ export const verifyOtp = async (req, res) => {
                 message: "Invalid email. Customer not found."
             })
         }
+        const existingOtp = await OtpVerificationModel.findByCustomerId(existingCustomer.id);
+        const RESEND_TIMEOUT = 60 * 1000;
+        if(existingOtp && new Date(existingOtp.updated_at).getTime() > Date.now() - RESEND_TIMEOUT){
+            const secondsLeft = Math.ceil(
+                (RESEND_TIMEOUT - (Date.now() - new Date(existingOtp.updated_at).getTime()))/1000
+            );
+            return res.status(429).json({
+                success: false,
+                message: `Please wait ${secondsLeft}s before requesting another otp!`
+            })
+        }
         const otp = generateOtp();
-        console.log(otp)
+        await OtpVerificationModel.save({
+            customer_id: existingCustomer.id,
+            otp,
+            expiry: new Date(Date.now() + 5*60*1000),
+        })
+        await sendOtp({email, otp});
+
+        return res.status(200).json({
+            success: true,
+            message: "Otp sent successfully!"
+        })
+
     } catch (err) {
         console.log(err);
         res.status(500).json({
+            success: false,
             message: "Internal server error"
+        })
+    }
+}
+
+export const resetPasswordByOtpVerification = async(req, res)=>{
+    const {email, otp, password} = req.body;
+    if (!email || !verifyEmail(email)) {
+        return res.status(400).json({
+            success: false,
+            message: "Bad request: Enter valid email."
+        })
+    }
+    try {
+        const existingCustomer = await CustomerModel.findByEmail(email);
+        if (!existingCustomer) {
+            return res.status(404).json({
+                success: "false",
+                message: "Invalid email. Customer not found."
+            })
+        }
+        const generatedOtp = await OtpVerificationModel.findByCustomerId(existingCustomer.id);
+        if (!generatedOtp) {
+            return res.status(404).json({
+                success: false,
+                message: "OTP not found for this customer.",
+            });
+        }
+        if(generatedOtp.expiry < Date.now()){
+            return res.status(400).json({
+                success: false,
+                message: "OTP has expired!"
+            })
+        }
+        if(generatedOtp.otp !== otp){
+            return res.status(400).json({
+                success: false,
+                message: "Invalid OTP!"
+            })
+        }
+        const hashedPassword = await bcrypt.hash(password, 10);
+        await CustomerModel.updatePassword({
+            email: existingCustomer.email,
+            password: hashedPassword
+        })
+        return res.status(200).json({
+            success: true,
+            message: "OTP verified, reset password successfully!"
+        })
+    } catch (err) {
+        console.log(err);
+        res.status(500).json({
+            success: false,
+            message: "Internal server error."
         })
     }
 }

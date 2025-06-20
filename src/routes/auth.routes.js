@@ -7,5 +7,7 @@ export function  createAuthRouter(){
     authRouter.post("/login", authService.loginCustomer);
     authRouter.get("/refresh", authService.refreshToken);
     authRouter.post("/logout", authService.logoutCustomer);
+    authRouter.post("/request-otp", authService.requestOtp);
+    authRouter.post("/reset-password", authService.resetPasswordByOtpVerification);
     return authRouter;
 }

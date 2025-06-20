@@ -15,3 +15,7 @@ export const findByEmail = (email)=>db("customers")
 export const findAll = ()=>db("customers").select("*");
 
 export const save = (data)=>db("customers").insert(data).returning("id");
+
+export const updatePassword = (user)=>db("customers")
+    .update({password: user.password, updated_at: db.fn.now()})
+    .where("email", user.email);
