@@ -281,3 +281,33 @@ export const resetPasswordByOtpVerification = async(req, res)=>{
         })
     }
 }
+
+export const generateApiAccessToken = async(req, res)=>{
+    const {email} = req.body;
+    if(!email || !verifyEmail(email)){
+        return res.status(400).json({
+            success: false,
+            message: "Invalid email!"
+        })
+    }
+    try {
+        const existing = await CustomerModel.findByEmail(email);
+        if(!existing){
+            return res.status(404).json({
+                success: false,
+                message: "Customer not found!"
+            })
+        }
+        const accessToken = jwtService.generateAccessToken({id: existing.id, email});
+        return res.status(200).json({
+            success: true,
+            accessToken
+        })
+    }catch (err){
+        console.log(err)
+        return res.status(500).json({
+            success: false,
+            message: "Something went wrong!"
+        })
+    }
+}
