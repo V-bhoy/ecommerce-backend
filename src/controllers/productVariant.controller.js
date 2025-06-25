@@ -55,7 +55,10 @@ export const getAllProductVariants = async(req, res)=>{
         const data = await ProductVariantModel.findAllByProductId(productId);
         return res.status(200).json({
             success: true,
-            variants: data
+            variants: data.map((item)=>({...item,
+                id: +item.id ,
+                qty: +item.qty,
+                product_id: +item.product_id}))
         })
     }catch(err){
         console.log(err);

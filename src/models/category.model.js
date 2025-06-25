@@ -10,4 +10,4 @@ export const findByName = (name)=>db("categories")
 
 export const save = (data)=>db("categories").insert(data).returning("id");
 
-export const findAll = ()=>db("categories").select("*");
+export const findAll = ()=>db("categories").select("id", "name");

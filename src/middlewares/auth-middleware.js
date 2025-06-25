@@ -10,7 +10,6 @@ export const authMiddleware = (req, res, next)=>{
     const accessToken = authHeader.substring(7);
     try{
       const decodedToken = verifyAccessToken(accessToken);
-      console.log(decodedToken);
       next();
     }catch (err){
          if(err.name === "TokenExpiredError"){
