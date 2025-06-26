@@ -8,4 +8,7 @@ export const findBySkuId = (skuId)=>db("product_variants")
 export const findAllByProductId = (id)=>db("product_variants")
     .select("*").where({product_id: id});
 
+export const findInStockVariantsByProductId = (id)=>db("product_variants")
+    .select("*").where({product_id: id}).where("qty", ">", 0);
+
 export const save = (data)=>db("product_variants").insert(data).returning("sku_id");

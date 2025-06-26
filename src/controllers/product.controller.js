@@ -1,7 +1,9 @@
 import * as ProductModel from "../models/product.model.js";
+import * as ProductVariantModel from "../models/productVariant.model.js"
 import * as CategoryModel from "../models/category.model.js";
 import * as SubCategoryModel from "../models/subCategory.model.js";
 import {formatProducts} from "../util/format-products.js";
+import {calculatePriceAfterDiscount} from "../util/calculate-price-after-discount.js";
 
 export const saveProduct = async (req, res) => {
     const {title, mrp, categoryId, subCategoryId, discount, imageUrl, shortInfo, description, details, specifications, isFeatured} = req.body;
@@ -115,8 +117,8 @@ export const getAllProductsByCategory = async(req, res)=>{
     }
 }
 
-export const getAllProductsByCategoryAndSubCategory = async(req, res)=>{
-    const {category, subCategory} = req.params;
+export const getIdByCategoryAndSubCategory = async(req, res)=>{
+    const {category, subCategory} = req.query;
     if(!category || !subCategory){
         return res.status(400).json({
             success: false,
@@ -138,13 +140,10 @@ export const getAllProductsByCategoryAndSubCategory = async(req, res)=>{
                 message: "Subcategory does not exist!"
             })
         }
-        const data = await ProductModel.getAllProductsByCategoryAndSubCategory({
-            categoryId: categoryExists.id,
-            subCategoryId: subCategoryExists.id
-        });
         return res.status(200).json({
             success: true,
-            products: formatProducts(data)
+            categoryId: categoryExists.id,
+            subCategoryId: subCategoryExists.id
         })
     }catch(err){
         console.log(err);
@@ -193,5 +192,49 @@ export const getAllPopularProducts = async(req, res)=>{
            success: false,
            message: "Server Error"
        })
+    }
+}
+
+export const getProductDetailsById = async(req, res)=>{
+    const {productId} = req.params;
+    if(!productId || isNaN(productId) ){
+        return res.status(400).json({
+            success: false,
+            message: "Invalid Product Id"
+        })
+    }
+    try{
+        const product = await ProductModel.getProductById(productId);
+        if(!product){
+            return res.status(404).json({
+                success: false,
+                message: "Product not found!"
+            })
+        }
+        const category = CategoryModel.findById(product.category_id);
+        const variants = ProductVariantModel.findInStockVariantsByProductId(productId);
+        const similarProducts = ProductModel.findAllSimilarProducts(product);
+        const complementaryProducts = ProductModel.findAllComplementaryProducts(product);
+
+        const [categoryResult, variantsResult, similarProductsResult, complementaryProductsResult] = await Promise.all([category, variants, similarProducts, complementaryProducts]);
+
+        return res.status(200).json({
+            success: true,
+            productDetails: {
+                ...product,
+                category: categoryResult.name,
+                inStock: variantsResult.length > 0,
+                priceAfterDiscount: calculatePriceAfterDiscount(product.mrp, product.discount),
+                variants: variantsResult
+            },
+            similarProducts: similarProductsResult,
+            complementaryProducts: complementaryProductsResult
+        })
+    }catch(err){
+        console.log(err);
+        res.status(500).json({
+            success: false,
+            message: "Internal server error"
+        })
     }
 }

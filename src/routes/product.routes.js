@@ -5,9 +5,10 @@ import {authMiddleware} from "../middlewares/auth-middleware.js";
 export function  createProductRouter(){
     const productRouter = express.Router();
     productRouter.post("/create", authMiddleware, productService.saveProduct);
+    productRouter.get("/id", productService.getIdByCategoryAndSubCategory);
     productRouter.get("/home/all", productService.getAllHomePageProducts);
     productRouter.get("/popular/:categoryId/all", productService.getAllPopularProducts);
     productRouter.post("/:category/all", productService.getAllProductsByCategory);
-    productRouter.get("/:category/:subCategory/all", productService.getAllProductsByCategoryAndSubCategory);
+    productRouter.get("/:productId",productService.getProductDetailsById);
     return productRouter;
 }

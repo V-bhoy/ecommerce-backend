@@ -23,13 +23,25 @@ export const saveProduct = (data)=>db("products").insert(data).returning("id");
 
 export const findProductByTitleAndCategory =(data) =>db("products").select("*").where(data).first();
 
+export const findAllComplementaryProducts = (product)=>db("products")
+    .select("*").where("category_id", product.category_id)
+    .andWhere("id", "!=", product.id)
+    .orderByRaw("RANDOM()")
+    .limit(10)
+
+export const findAllSimilarProducts = (product)=>db("products")
+    .select("*").where("sub_category_id", product.sub_category_id)
+    .andWhere("id", "!=", product.id)
+    .limit(10)
+
 export const findAllProductsByCategory = (id, filters={}, limit, offset)=>{
     const {
         subCategoryIds,
+        inStock,
+        sizes,
         minPrice,
         maxPrice,
-        inStock,
-        sizes
+        sortBy
     } = filters;
     const query = db("products as p")
         .select("p.*")
@@ -40,16 +52,31 @@ export const findAllProductsByCategory = (id, filters={}, limit, offset)=>{
         query.whereIn("p.sub_category_id", subCategoryIds);
     }
     if (minPrice && maxPrice) {
-        query.whereBetween("p.mrp", [minPrice, maxPrice]);
+        query.whereRaw('(p.mrp  - (p.mrp * p.discount / 100)) BETWEEN ? AND ?', [minPrice, maxPrice]);
     }
     if (sizes?.length) {
         query.whereIn("pv.size", sizes);
     }
     if (typeof inStock === "boolean") {
-        if(inStock){
-            query.havingRaw("SUM(pv.qty)>0");
-        }else{
-            query.havingRaw("SUM(pv.qty)=0");
+        query.havingRaw(`SUM(pv.qty) ${inStock ? '>' : '='} 0`);
+    }
+    if(sortBy){
+        const value = sortBy.name+"_"+sortBy.value;
+        switch (value){
+            case "price_asc":
+                query.orderByRaw(`(p.mrp - (p.mrp * p.discount / 100)) ASC`);
+                break;
+            case "price_desc":
+                query.orderByRaw(`(p.mrp - (p.mrp * p.discount / 100)) DESC`);
+                break;
+            case "title_asc":
+                query.orderBy("p.title", "asc");
+                break;
+            case "title_desc":
+                query.orderBy("p.title", "desc");
+                break;
+            default:
+                break;
         }
     }
     return query.limit(limit).offset(offset);
@@ -58,9 +85,9 @@ export const findAllProductsByCategory = (id, filters={}, limit, offset)=>{
 export const countAllProductsByCategory = (id, filters={})=>{
     const {
         subCategoryIds,
+        inStock,
         minPrice,
         maxPrice,
-        inStock,
         sizes
     } = filters;
     const query = db("products as p")
@@ -72,7 +99,7 @@ export const countAllProductsByCategory = (id, filters={})=>{
         query.whereIn("p.sub_category_id", subCategoryIds);
     }
     if (minPrice && maxPrice) {
-        query.whereBetween("p.mrp", [minPrice, maxPrice]);
+        query.whereRaw('(p.mrp  - (p.mrp * p.discount / 100)) BETWEEN ? AND ?', [minPrice, maxPrice]);
     }
     if (sizes?.length) {
         query.whereIn("pv.size", sizes);
