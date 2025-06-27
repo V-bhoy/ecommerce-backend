@@ -4,6 +4,7 @@ import {createAuthRouter} from "./auth.routes.js";
 import {createCategoryRouter} from "./category.routes.js";
 import {createSubCategoryRouter} from "./sub-category.routes.js";
 import {createProductVariantRouter} from "./product-variant.routes.js";
+import {createStripeRouter} from "./stripe.routes.js";
 
 
 export default function createAppRouter(){
@@ -13,12 +14,14 @@ export default function createAppRouter(){
     const categoryRoutes = createCategoryRouter();
     const subCategoryRoutes = createSubCategoryRouter();
     const variantRoutes = createProductVariantRouter();
+    const stripeRoutes = createStripeRouter();
 
     router.use("/auth", authRoutes);
     router.use("/categories", categoryRoutes);
     router.use("/sub-categories", subCategoryRoutes);
     router.use("/products", productRoutes);
     router.use("/variants", variantRoutes);
+    router.use("/checkout", stripeRoutes);
 
     return router;
 }
