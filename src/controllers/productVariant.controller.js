@@ -68,3 +68,36 @@ export const getAllProductVariants = async(req, res)=>{
         })
     }
 }
+
+export const getInStockProductVariants = async(req, res)=>{
+    const {productId} = req.params;
+    if(!productId || isNaN(productId)){
+        return res.status(400).json({
+            success: false,
+            message: "Valid product Id is required!"
+        })
+    }
+    try{
+        const existing = await ProductModel.getProductById(productId);
+        if(!existing){
+            return res.status(404).json({
+                success: false,
+                message: "Product not found!"
+            })
+        }
+        const data = await ProductVariantModel.findInStockVariantsByProductId(productId);
+        return res.status(200).json({
+            success: true,
+            variants: data.map((item)=>({...item,
+                id: +item.id ,
+                qty: +item.qty,
+                product_id: +item.product_id}))
+        })
+    }catch(err){
+        console.log(err);
+        return res.status(500).json({
+            success: false,
+            message: "Something went wrong!"
+        })
+    }
+}

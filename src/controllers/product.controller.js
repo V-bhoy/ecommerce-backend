@@ -96,7 +96,7 @@ export const getAllProductsByCategory = async(req, res)=>{
         const offset = (page - 1)*limit;
         const [data, [countResult]] = await Promise.all( [
             ProductModel.findAllProductsByCategory(categoryExists.id, filters, +limit, +offset),
-            ProductModel.countAllProductsByCategory(categoryExists.id, filters)
+            ProductModel.countAllProductsByCategory(categoryExists.id, filters),
         ]);
 
         const totalCount = +(countResult?.count || 0);
@@ -197,6 +197,7 @@ export const getAllPopularProducts = async(req, res)=>{
 
 export const getProductDetailsById = async(req, res)=>{
     const {productId} = req.params;
+    const {viewOnly} = req.query;
     if(!productId || isNaN(productId) ){
         return res.status(400).json({
             success: false,
@@ -216,6 +217,20 @@ export const getProductDetailsById = async(req, res)=>{
         const similarProducts = ProductModel.findAllSimilarProducts(product);
         const complementaryProducts = ProductModel.findAllComplementaryProducts(product);
 
+        if(viewOnly){
+            const [categoryResult, variantsResult] = await Promise.all([category, variants]);
+            return res.status(200).json({
+                success: true,
+                productDetails: {
+                    ...product,
+                    category: categoryResult.name,
+                    inStock: variantsResult.length > 0,
+                    priceAfterDiscount: calculatePriceAfterDiscount(product.mrp, product.discount),
+                    variants: variantsResult
+                }
+            })
+        }
+
         const [categoryResult, variantsResult, similarProductsResult, complementaryProductsResult] = await Promise.all([category, variants, similarProducts, complementaryProducts]);
 
         return res.status(200).json({
@@ -227,8 +242,8 @@ export const getProductDetailsById = async(req, res)=>{
                 priceAfterDiscount: calculatePriceAfterDiscount(product.mrp, product.discount),
                 variants: variantsResult
             },
-            similarProducts: similarProductsResult,
-            complementaryProducts: complementaryProductsResult
+            similarProducts: formatProducts(similarProductsResult),
+            complementaryProducts: formatProducts(complementaryProductsResult)
         })
     }catch(err){
         console.log(err);

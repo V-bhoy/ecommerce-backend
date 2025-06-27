@@ -44,7 +44,9 @@ export const findAllProductsByCategory = (id, filters={}, limit, offset)=>{
         sortBy
     } = filters;
     const query = db("products as p")
-        .select("p.*")
+        .select("p.*",
+            db.raw(`CASE WHEN SUM(pv.qty) > 0 THEN true ELSE false END AS "inStock"`)
+        )
         .leftJoin("product_variants as pv", "p.id", "pv.product_id")
         .where("p.category_id", id)
         .groupBy("p.id");
