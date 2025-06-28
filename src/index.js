@@ -4,15 +4,16 @@ import cors from "cors";
 import {createDB} from "./db/knex.js";
 import transport from "./config/nodemailer.js";
 import cookieParser from "cookie-parser";
-import Stripe from "stripe";
+import Razorpay from "razorpay";
 
 const env = process.env.NODE_ENV || "development";
 const db = createDB({env});
 const app = express();
 const nodemailer = {transport, senderEmail: process.env.SMTP_USER}
-const stripeKey = process.env.STRIPE_KEY;
-const stripe = Stripe(stripeKey);
-const clientUrl = process.env.CLIENT_URL;
+const razorpay = new Razorpay({
+    key_id: process.env.RAZORPAY_KEY_ID,
+    key_secret: process.env.RAZORPAY_KEY_SECRET
+})
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
@@ -27,8 +28,7 @@ const appConfig = {
     db,
     env,
     nodemailer,
-    stripe,
-    clientUrl
+    razorpay
 }
 
 export default appConfig;

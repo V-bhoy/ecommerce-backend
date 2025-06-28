@@ -16,3 +16,7 @@ export const countInStockVariantsByProductId = (id)=>db("product_variants")
     .countDistinct("id as count").where({product_id: id}).where("qty", ">", 0);
 
 export const save = (data)=>db("product_variants").insert(data).returning("sku_id");
+
+export const updateSkuQty = (skuId, orderedQty)=> db("product_variants as pv")
+    .decrement("qty", orderedQty)
+    .where("sku_id", skuId);
