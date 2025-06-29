@@ -2,6 +2,7 @@ import * as ProductModel from "../models/product.model.js";
 import * as ProductVariantModel from "../models/productVariant.model.js"
 import * as CategoryModel from "../models/category.model.js";
 import * as SubCategoryModel from "../models/subCategory.model.js";
+import * as WishlistModel from "../models/wishlist.model.js";
 import {formatProducts} from "../util/format-products.js";
 import {calculatePriceAfterDiscount} from "../util/calculate-price-after-discount.js";
 
@@ -78,6 +79,7 @@ export const getAllProductsByCategory = async(req, res)=>{
     const {category} = req.params;
     const {page =1, limit = 10} = req.query;
     const filters = req.body;
+    const userId = req.user?.id;
 
     if(!category){
         return res.status(400).json({
@@ -96,8 +98,8 @@ export const getAllProductsByCategory = async(req, res)=>{
         }
         const offset = (page - 1)*limit;
         const [data, [countResult]] = await Promise.all( [
-            ProductModel.findAllProducts({categoryId: categoryExists.id, filters, limit: +limit, offset: +offset}),
-            ProductModel.countAllProducts({categoryId: categoryExists.id, filters}),
+            ProductModel.findAllProducts({categoryId: categoryExists.id, userId, filters, limit: +limit, offset: +offset}),
+            ProductModel.countAllProducts({categoryId: categoryExists.id, userId, filters}),
         ]);
 
         const totalCount = +(countResult?.count || 0);
@@ -199,6 +201,7 @@ export const getAllPopularProducts = async(req, res)=>{
 export const getProductDetailsById = async(req, res)=>{
     const {productId} = req.params;
     const {viewOnly} = req.query;
+    const userId = req.user?.id;
     if(!productId || isNaN(productId) ){
         return res.status(400).json({
             success: false,
@@ -217,13 +220,20 @@ export const getProductDetailsById = async(req, res)=>{
         const variants = ProductVariantModel.findInStockVariantsByProductId(productId);
         const similarProducts = ProductModel.findAllSimilarProducts(product);
         const complementaryProducts = ProductModel.findAllComplementaryProducts(product);
+        let isWishlisted = !!userId;
+        if(userId){
+            const exist = await WishlistModel.findWishlist(userId, productId);
+            isWishlisted = !!exist;
+        }
 
         if(viewOnly){
             const [categoryResult, variantsResult] = await Promise.all([category, variants]);
+            if(userId)
             return res.status(200).json({
                 success: true,
                 productDetails: {
                     ...product,
+                    isWishlisted,
                     category: categoryResult.name,
                     inStock: variantsResult.length > 0,
                     priceAfterDiscount: calculatePriceAfterDiscount(product.mrp, product.discount),
@@ -238,6 +248,7 @@ export const getProductDetailsById = async(req, res)=>{
             success: true,
             productDetails: {
                 ...product,
+                isWishlisted,
                 category: categoryResult.name,
                 inStock: variantsResult.length > 0,
                 priceAfterDiscount: calculatePriceAfterDiscount(product.mrp, product.discount),
@@ -257,12 +268,15 @@ export const getProductDetailsById = async(req, res)=>{
 
 export const getAllProducts = async(req, res)=>{
     const {page =1, limit = 10} = req.query;
-   const filters = req.body;
+    const filters = req.body;
+    const userId = req.user?.id;
+    const onlyWishlisted = req.originalUrl.startsWith("/api/wishlist/all");
     const offset = (page - 1)*limit;
+    console.log(userId);
    try {
        const [data, [countResult]] = await Promise.all( [
-           ProductModel.findAllProducts({ filters, limit: +limit, offset: +offset}),
-           ProductModel.countAllProducts({filters}),
+           ProductModel.findAllProducts({ filters, userId, limit: +limit, offset: +offset, onlyWishlisted}),
+           ProductModel.countAllProducts({filters, userId, onlyWishlisted}),
        ]);
 
        const totalCount = +(countResult?.count || 0);

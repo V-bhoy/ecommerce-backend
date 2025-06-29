@@ -8,7 +8,7 @@ const {razorpay} = appConfig;
 
 export const createOrder = async(req, res)=>{
     const {items, billingDetails} = req.body;
-    const userId = req.headers.user_id;
+    const userId = req.user.id;
     const gstAmount = 20;
 
     const {totalAmount, discount} = items.reduce((acc, item)=>{
@@ -140,6 +140,23 @@ export const updateOrderPaymentFailed = async(req, res)=>{
        })
 
     }catch (err){
+        console.log(err);
+        return res.status(500).json({
+            success: false,
+            message: "Something went wrong"
+        })
+    }
+}
+
+export const getAllOrdersByUserId = async(req, res)=>{
+    const userId = req.user.id;
+    try{
+      const orders = await OrdersModel.getAllOrders(userId);
+      return res.status(200).json({
+          success: true,
+          orders
+      })
+    }catch(err){
         console.log(err);
         return res.status(500).json({
             success: false,

@@ -5,6 +5,8 @@ import {createCategoryRouter} from "./category.routes.js";
 import {createSubCategoryRouter} from "./sub-category.routes.js";
 import {createProductVariantRouter} from "./product-variant.routes.js";
 import {createOrdersRouter} from "./orders.routes.js";
+import {createWishlistRouter} from "./wishlist.routes.js";
+import {authMiddleware} from "../middlewares/auth-middleware.js";
 
 
 export default function createAppRouter(){
@@ -15,13 +17,15 @@ export default function createAppRouter(){
     const subCategoryRoutes = createSubCategoryRouter();
     const variantRoutes = createProductVariantRouter();
     const ordersRoutes = createOrdersRouter();
+    const wishlistRoutes = createWishlistRouter();
 
     router.use("/auth", authRoutes);
     router.use("/categories", categoryRoutes);
     router.use("/sub-categories", subCategoryRoutes);
     router.use("/products", productRoutes);
     router.use("/variants", variantRoutes);
-    router.use("/orders", ordersRoutes);
+    router.use("/orders", authMiddleware, ordersRoutes);
+    router.use("/wishlist", authMiddleware, wishlistRoutes);
 
     return router;
 }

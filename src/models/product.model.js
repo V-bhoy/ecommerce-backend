@@ -34,7 +34,7 @@ export const findAllSimilarProducts = (product)=>db("products")
     .andWhere("id", "!=", product.id)
     .limit(10)
 
-export const findAllProducts = ({categoryId, filters={}, limit, offset})=>{
+export const findAllProducts = ({ categoryId, filters = {}, limit, offset, userId = null, onlyWishlisted }) => {
     const {
         subCategoryIds,
         inStock,
@@ -44,23 +44,40 @@ export const findAllProducts = ({categoryId, filters={}, limit, offset})=>{
         sortBy,
         search
     } = filters;
+
     const query = db("products as p")
-        .select("p.*",
-            db.raw(`CASE WHEN SUM(pv.qty) > 0 THEN true ELSE false END AS "inStock"`)
+        .select(
+            "p.*",
+            db.raw(`CASE WHEN SUM(pv.qty) > 0 THEN true ELSE false END AS "inStock"`),
+            userId
+                ? db.raw(`CASE WHEN w.product_id IS NOT NULL THEN TRUE ELSE FALSE END AS "isWishlisted"`)
+                : db.raw(`FALSE AS "isWishlisted"`)
         )
         .leftJoin("product_variants as pv", "p.id", "pv.product_id")
         .groupBy("p.id");
-    if(categoryId){
+
+    if (userId) {
+        query.leftJoin("wishlist as w", function () {
+            this.on("w.product_id", "=", "p.id").andOn("w.customer_id", "=", db.raw("?", [userId]));
+        });
+        query.groupBy("w.product_id");
+    }
+
+    if (userId && onlyWishlisted) {
+        query.whereNotNull("w.product_id");
+    }
+
+    if (categoryId) {
         query.where("p.category_id", categoryId);
     }
     if (subCategoryIds?.length) {
         query.whereIn("p.sub_category_id", subCategoryIds);
     }
-    if(search){
+    if (search) {
         query.whereILike("p.title", `%${search}%`);
     }
     if (minPrice && maxPrice) {
-        query.whereRaw('(p.mrp  - (p.mrp * p.discount / 100)) BETWEEN ? AND ?', [minPrice, maxPrice]);
+        query.whereRaw('(p.mrp - (p.mrp * p.discount / 100)) BETWEEN ? AND ?', [minPrice, maxPrice]);
     }
     if (sizes?.length) {
         query.whereIn("pv.size", sizes);
@@ -68,9 +85,9 @@ export const findAllProducts = ({categoryId, filters={}, limit, offset})=>{
     if (typeof inStock === "boolean") {
         query.havingRaw(`SUM(pv.qty) ${inStock ? '>' : '='} 0`);
     }
-    if(sortBy){
-        const value = sortBy.name+"_"+sortBy.value;
-        switch (value){
+    if (sortBy) {
+        const value = sortBy.name + "_" + sortBy.value;
+        switch (value) {
             case "price_asc":
                 query.orderByRaw(`(p.mrp - (p.mrp * p.discount / 100)) ASC`);
                 break;
@@ -83,14 +100,13 @@ export const findAllProducts = ({categoryId, filters={}, limit, offset})=>{
             case "title_desc":
                 query.orderBy("p.title", "desc");
                 break;
-            default:
-                break;
         }
     }
-    return query.limit(limit).offset(offset);
-}
 
-export const countAllProducts = ({categoryId, filters={}})=>{
+    return query.limit(limit).offset(offset);
+};
+
+export const countAllProducts = ({ categoryId, filters = {}, userId = null, onlyWishlisted = false }) => {
     const {
         subCategoryIds,
         inStock,
@@ -99,31 +115,41 @@ export const countAllProducts = ({categoryId, filters={}})=>{
         sizes,
         search
     } = filters;
+
     const query = db("products as p")
-        .countDistinct("p.id as count")
         .leftJoin("product_variants as pv", "p.id", "pv.product_id");
 
-    if(categoryId){
+    if (userId) {
+        query.leftJoin("wishlist as w", function () {
+            this.on("w.product_id", "=", "p.id").andOn("w.customer_id", "=", db.raw("?", [userId]));
+        });
+    }
+
+    if (userId && onlyWishlisted) {
+        query.whereNotNull("w.product_id");
+    }
+
+    if (categoryId) {
         query.where("p.category_id", categoryId);
     }
     if (subCategoryIds?.length) {
         query.whereIn("p.sub_category_id", subCategoryIds);
     }
-    if(search){
-        query.whereILike("p.title",`%${search}%`)
+    if (search) {
+        query.whereILike("p.title", `%${search}%`);
     }
     if (minPrice && maxPrice) {
-        query.whereRaw('(p.mrp  - (p.mrp * p.discount / 100)) BETWEEN ? AND ?', [minPrice, maxPrice]);
+        query.whereRaw('(p.mrp - (p.mrp * p.discount / 100)) BETWEEN ? AND ?', [minPrice, maxPrice]);
     }
     if (sizes?.length) {
         query.whereIn("pv.size", sizes);
     }
+
     if (typeof inStock === "boolean") {
-        if(inStock){
-            query.havingRaw("SUM(pv.qty)>0");
-        }else{
-            query.havingRaw("SUM(pv.qty)=0");
-        }
+        query.groupBy("p.id");
+        query.havingRaw(`SUM(pv.qty) ${inStock ? ">" : "="} 0`);
+        return db.from(query.as("sub")).count("* as count");
     }
-    return query;
-}
+
+    return query.countDistinct("p.id as count");
+};
