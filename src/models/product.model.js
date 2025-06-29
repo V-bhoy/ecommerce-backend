@@ -51,9 +51,11 @@ export const findAllProducts = ({ categoryId, filters = {}, limit, offset, userI
             db.raw(`CASE WHEN SUM(pv.qty) > 0 THEN true ELSE false END AS "inStock"`),
             userId
                 ? db.raw(`CASE WHEN w.product_id IS NOT NULL THEN TRUE ELSE FALSE END AS "isWishlisted"`)
-                : db.raw(`FALSE AS "isWishlisted"`)
+                : db.raw(`FALSE AS "isWishlisted"`),
+            db.raw(`ROUND(AVG(r.rating), 0) AS "rating"`)
         )
         .leftJoin("product_variants as pv", "p.id", "pv.product_id")
+        .leftJoin("reviews as r", "p.id", "r.product_id")
         .groupBy("p.id");
 
     if (userId) {
@@ -93,6 +95,12 @@ export const findAllProducts = ({ categoryId, filters = {}, limit, offset, userI
                 break;
             case "price_desc":
                 query.orderByRaw(`(p.mrp - (p.mrp * p.discount / 100)) DESC`);
+                break;
+            case "rating_asc":
+                query.orderByRaw(`ROUND(AVG(r.rating), 0) ASC NULLS LAST`);
+                break;
+            case "rating_desc":
+                query.orderByRaw(`ROUND(AVG(r.rating), 0) DESC NULLS LAST`);
                 break;
             case "title_asc":
                 query.orderBy("p.title", "asc");

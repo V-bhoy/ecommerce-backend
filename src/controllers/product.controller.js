@@ -3,6 +3,7 @@ import * as ProductVariantModel from "../models/productVariant.model.js"
 import * as CategoryModel from "../models/category.model.js";
 import * as SubCategoryModel from "../models/subCategory.model.js";
 import * as WishlistModel from "../models/wishlist.model.js";
+import * as ReviewModel from "../models/review.model.js";
 import {formatProducts} from "../util/format-products.js";
 import {calculatePriceAfterDiscount} from "../util/calculate-price-after-discount.js";
 
@@ -217,6 +218,8 @@ export const getProductDetailsById = async(req, res)=>{
             })
         }
         const category = CategoryModel.findById(product.category_id);
+        const countReviews= ReviewModel.countProductReviews(productId);
+        const avgRating = ReviewModel.getProductAverageRating(productId);
         const variants = ProductVariantModel.findInStockVariantsByProductId(productId);
         const similarProducts = ProductModel.findAllSimilarProducts(product);
         const complementaryProducts = ProductModel.findAllComplementaryProducts(product);
@@ -226,34 +229,27 @@ export const getProductDetailsById = async(req, res)=>{
             isWishlisted = !!exist;
         }
 
+        const [categoryResult, variantsResult, [total], rating] = await Promise.all([category, variants, countReviews, avgRating]);
+        const productDetails = {
+            ...product,
+            isWishlisted,
+            rating: Math.round(+rating.average_rating),
+            totalReviews: total.count || 0,
+            category: categoryResult.name,
+            inStock: variantsResult.length > 0,
+            priceAfterDiscount: calculatePriceAfterDiscount(product.mrp, product.discount),
+            variants: variantsResult
+        }
         if(viewOnly){
-            const [categoryResult, variantsResult] = await Promise.all([category, variants]);
-            if(userId)
             return res.status(200).json({
                 success: true,
-                productDetails: {
-                    ...product,
-                    isWishlisted,
-                    category: categoryResult.name,
-                    inStock: variantsResult.length > 0,
-                    priceAfterDiscount: calculatePriceAfterDiscount(product.mrp, product.discount),
-                    variants: variantsResult
-                }
+                productDetails
             })
         }
-
-        const [categoryResult, variantsResult, similarProductsResult, complementaryProductsResult] = await Promise.all([category, variants, similarProducts, complementaryProducts]);
-
+        const [similarProductsResult, complementaryProductsResult] = await Promise.all([similarProducts, complementaryProducts]);
         return res.status(200).json({
             success: true,
-            productDetails: {
-                ...product,
-                isWishlisted,
-                category: categoryResult.name,
-                inStock: variantsResult.length > 0,
-                priceAfterDiscount: calculatePriceAfterDiscount(product.mrp, product.discount),
-                variants: variantsResult
-            },
+            productDetails,
             similarProducts: formatProducts(similarProductsResult),
             complementaryProducts: formatProducts(complementaryProductsResult)
         })
@@ -272,7 +268,6 @@ export const getAllProducts = async(req, res)=>{
     const userId = req.user?.id;
     const onlyWishlisted = req.originalUrl.startsWith("/api/wishlist/all");
     const offset = (page - 1)*limit;
-    console.log(userId);
    try {
        const [data, [countResult]] = await Promise.all( [
            ProductModel.findAllProducts({ filters, userId, limit: +limit, offset: +offset, onlyWishlisted}),
