@@ -34,24 +34,30 @@ export const findAllSimilarProducts = (product)=>db("products")
     .andWhere("id", "!=", product.id)
     .limit(10)
 
-export const findAllProductsByCategory = (id, filters={}, limit, offset)=>{
+export const findAllProducts = ({categoryId, filters={}, limit, offset})=>{
     const {
         subCategoryIds,
         inStock,
         sizes,
         minPrice,
         maxPrice,
-        sortBy
+        sortBy,
+        search
     } = filters;
     const query = db("products as p")
         .select("p.*",
             db.raw(`CASE WHEN SUM(pv.qty) > 0 THEN true ELSE false END AS "inStock"`)
         )
         .leftJoin("product_variants as pv", "p.id", "pv.product_id")
-        .where("p.category_id", id)
         .groupBy("p.id");
+    if(categoryId){
+        query.where("p.category_id", categoryId);
+    }
     if (subCategoryIds?.length) {
         query.whereIn("p.sub_category_id", subCategoryIds);
+    }
+    if(search){
+        query.whereILike("p.title", `%${search}%`);
     }
     if (minPrice && maxPrice) {
         query.whereRaw('(p.mrp  - (p.mrp * p.discount / 100)) BETWEEN ? AND ?', [minPrice, maxPrice]);
@@ -84,21 +90,27 @@ export const findAllProductsByCategory = (id, filters={}, limit, offset)=>{
     return query.limit(limit).offset(offset);
 }
 
-export const countAllProductsByCategory = (id, filters={})=>{
+export const countAllProducts = ({categoryId, filters={}})=>{
     const {
         subCategoryIds,
         inStock,
         minPrice,
         maxPrice,
-        sizes
+        sizes,
+        search
     } = filters;
     const query = db("products as p")
         .countDistinct("p.id as count")
-        .leftJoin("product_variants as pv", "p.id", "pv.product_id")
-        .where("p.category_id", id);
+        .leftJoin("product_variants as pv", "p.id", "pv.product_id");
 
+    if(categoryId){
+        query.where("p.category_id", categoryId);
+    }
     if (subCategoryIds?.length) {
         query.whereIn("p.sub_category_id", subCategoryIds);
+    }
+    if(search){
+        query.whereILike("p.title",`%${search}%`)
     }
     if (minPrice && maxPrice) {
         query.whereRaw('(p.mrp  - (p.mrp * p.discount / 100)) BETWEEN ? AND ?', [minPrice, maxPrice]);

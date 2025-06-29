@@ -85,6 +85,7 @@ export const getAllProductsByCategory = async(req, res)=>{
             message: "Invalid category!"
         })
     }
+
     try {
         const categoryExists = await CategoryModel.findByName(category);
         if(!categoryExists){
@@ -95,8 +96,8 @@ export const getAllProductsByCategory = async(req, res)=>{
         }
         const offset = (page - 1)*limit;
         const [data, [countResult]] = await Promise.all( [
-            ProductModel.findAllProductsByCategory(categoryExists.id, filters, +limit, +offset),
-            ProductModel.countAllProductsByCategory(categoryExists.id, filters),
+            ProductModel.findAllProducts({categoryId: categoryExists.id, filters, limit: +limit, offset: +offset}),
+            ProductModel.countAllProducts({categoryId: categoryExists.id, filters}),
         ]);
 
         const totalCount = +(countResult?.count || 0);
@@ -252,4 +253,32 @@ export const getProductDetailsById = async(req, res)=>{
             message: "Internal server error"
         })
     }
+}
+
+export const getAllProducts = async(req, res)=>{
+    const {page =1, limit = 10} = req.query;
+   const filters = req.body;
+    const offset = (page - 1)*limit;
+   try {
+       const [data, [countResult]] = await Promise.all( [
+           ProductModel.findAllProducts({ filters, limit: +limit, offset: +offset}),
+           ProductModel.countAllProducts({filters}),
+       ]);
+
+       const totalCount = +(countResult?.count || 0);
+       const totalPages = Math.ceil(totalCount/limit);
+
+       return res.status(200).json({
+           success: true,
+           products: formatProducts(data),
+           page,
+           limit,
+           totalCount,
+           totalPages
+       })
+
+   }catch(err){
+       console.log(err);
+       res.status(500).json({error: 'Server error'});
+   }
 }
