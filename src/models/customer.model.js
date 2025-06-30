@@ -12,6 +12,8 @@ export const findByEmail = (email)=>db("customers")
     .where({email})
     .first();
 
+export const updateAddress = (data, email)=>db("customers").update(data).where({email});
+
 export const findAll = ()=>db("customers").select("*");
 
 export const save = (data)=>db("customers").insert(data).returning("id");

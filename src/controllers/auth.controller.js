@@ -159,15 +159,15 @@ export const refreshToken = async (req, res) => {
     }
     try {
         const user = verifyRefreshToken(refreshToken);
-        const userDetails = CustomerModel.findByEmail(user.email);
+        const userDetails =await CustomerModel.findByEmail(user.email);
         const newAccessToken = generateAccessToken({id: user.id, email: user.email});
         return res.status(200).json({
             success: true,
             accessToken: newAccessToken,
             user: {
                 id: user.id,
-                firstName: userDetails?.firstName,
-                lastName: userDetails?.lastName,
+                firstName: userDetails?.first_name,
+                lastName: userDetails?.last_name,
                 email: user.email
             }
         })

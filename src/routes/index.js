@@ -8,6 +8,7 @@ import {createOrdersRouter} from "./orders.routes.js";
 import {createWishlistRouter} from "./wishlist.routes.js";
 import {authMiddleware} from "../middlewares/auth-middleware.js";
 import {createReviewRouter} from "./review.routes.js";
+import {createCustomerRouter} from "./customer.routes.js";
 
 
 export default function createAppRouter(){
@@ -20,8 +21,10 @@ export default function createAppRouter(){
     const ordersRoutes = createOrdersRouter();
     const wishlistRoutes = createWishlistRouter();
     const reviewRoutes = createReviewRouter();
+    const customerRoutes = createCustomerRouter();
 
     router.use("/auth", authRoutes);
+    router.use("/customer", authMiddleware, customerRoutes);
     router.use("/categories", categoryRoutes);
     router.use("/sub-categories", subCategoryRoutes);
     router.use("/products", productRoutes);
