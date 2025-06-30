@@ -1,7 +1,7 @@
 import express from "express";
 import "dotenv/config.js";
 import cors from "cors";
-import {createDB} from "./db/knex.js";
+import {createDB} from "./db/createDB.js";
 import transport from "./config/nodemailer.js";
 import cookieParser from "cookie-parser";
 import Razorpay from "razorpay";

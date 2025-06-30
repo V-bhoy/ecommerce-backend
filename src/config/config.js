@@ -10,10 +10,17 @@ export const config = {
                 port: process.env.DB_PORT || 5432,
                 user: process.env.DB_USER,
                 password: process.env.DB_PASSWORD,
-                database: process.env.DB_NAME,
-                ssl: {
-                    rejectUnauthorized: false
-                }
+                database: process.env.DB_NAME
+                // ssl: {
+                //     rejectUnauthorized: false
+                // },
+            },
+            migrations: {
+                tableName: "knex_migrations",
+                directory: "./migrations"
+            },
+            seeds: {
+               directory: "./seeds"
             },
             pool: {
                 min: 0,
@@ -32,9 +39,13 @@ export const config = {
                 user: process.env.DB_USER,
                 password: process.env.DB_PASSWORD,
                 database: process.env.DB_NAME,
-                ssl: {
-                    rejectUnauthorized: false
-                }
+                // ssl: {
+                //     rejectUnauthorized: false
+                // }
+            },
+            migrations: {
+                tableName: "knex_migrations",
+                directory: "./migrations"
             },
             pool: {
                 min: 0,

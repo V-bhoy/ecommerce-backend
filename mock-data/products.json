@@ -1,0 +1,2051 @@
+[
+  {
+    "id": "1",
+    "title": "White Casual T-Shirt",
+    "image_url": "https://cdn.pixabay.com/photo/2018/08/28/17/08/portrait-3637976_1280.jpg",
+    "short_info": "Cotton round neck t-shirt",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4500",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Half"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-16 20:02:59.457917+00",
+    "updated_at": "2025-06-16 20:02:59.457917+00",
+    "category_id": 1,
+    "sub_category_id": 1
+  },
+  {
+    "id": "2",
+    "title": "Graphic Tee",
+    "image_url": "https://cdn.pixabay.com/photo/2017/05/23/10/53/t-shirt-design-2336850_1280.jpg",
+    "short_info": "Deep blue cotton casual t-shirt for men.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "15",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Half"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:08:41.122818+00",
+    "updated_at": "2025-06-21 05:08:41.122818+00",
+    "category_id": 1,
+    "sub_category_id": 1
+  },
+  {
+    "id": "3",
+    "title": "Graphic Black Tee",
+    "image_url": "https://cdn.pixabay.com/photo/2023/03/22/15/40/man-7869911_1280.jpg",
+    "short_info": "Black cotton casual t-shirt for men.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4500",
+    "discount": "15",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Half"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:09:35.161543+00",
+    "updated_at": "2025-06-21 05:09:35.161543+00",
+    "category_id": 1,
+    "sub_category_id": 1
+  },
+  {
+    "id": "4",
+    "title": "Polo Tee",
+    "image_url": "https://cdn.pixabay.com/photo/2017/05/31/06/49/model-2359322_1280.jpg",
+    "short_info": "Blue cotton polo t-shirt with collar for men.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "6000",
+    "discount": "15",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Half"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:10:32.041067+00",
+    "updated_at": "2025-06-21 05:10:32.041067+00",
+    "category_id": 1,
+    "sub_category_id": 1
+  },
+  {
+    "id": "5",
+    "title": "Funky Tee",
+    "image_url": "https://cdn.pixabay.com/photo/2015/06/19/09/41/portrait-814645_1280.jpg",
+    "short_info": "Funky cotton t-shirt, round neck for men.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "6000",
+    "discount": "20",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Half"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:11:27.112005+00",
+    "updated_at": "2025-06-21 05:11:27.112005+00",
+    "category_id": 1,
+    "sub_category_id": 1
+  },
+  {
+    "id": "6",
+    "title": "Formal Shirt",
+    "image_url": "https://cdn.pixabay.com/photo/2021/02/06/09/10/man-5987522_1280.jpg",
+    "short_info": "White cotton formal shirt, full sleeves for men.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "neck": "Collar Neck",
+      "length": "Full",
+      "sleeves": "Full"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:12:37.009885+00",
+    "updated_at": "2025-06-21 05:12:37.009885+00",
+    "category_id": 1,
+    "sub_category_id": 2
+  },
+  {
+    "id": "7",
+    "title": "Formal Blue Shirt",
+    "image_url": "https://cdn.pixabay.com/photo/2021/02/18/15/17/men-6027492_1280.jpg",
+    "short_info": "Sky blue cotton formal shirt, full sleeves for men.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4500",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "neck": "Collar Neck",
+      "length": "Full",
+      "sleeves": "Full"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:13:24.372187+00",
+    "updated_at": "2025-06-21 05:13:24.372187+00",
+    "category_id": 1,
+    "sub_category_id": 2
+  },
+  {
+    "id": "8",
+    "title": "Formal Black Shirt",
+    "image_url": "https://cdn.pixabay.com/photo/2016/03/28/22/18/business-man-1287044_1280.jpg",
+    "short_info": "Black cotton formal shirt, full sleeves for men.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "15",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "neck": "Collar Neck",
+      "length": "Full",
+      "sleeves": "Full"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:14:22.084025+00",
+    "updated_at": "2025-06-21 05:14:22.084025+00",
+    "category_id": 1,
+    "sub_category_id": 2
+  },
+  {
+    "id": "9",
+    "title": "Formal Gray Shirt",
+    "image_url": "https://cdn.pixabay.com/photo/2017/08/17/10/23/shirt-2650677_1280.jpg",
+    "short_info": "Casual cotton formal shirt, half sleeves for men.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "3000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "neck": "Collar Neck",
+      "length": "Full",
+      "sleeves": "Half"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:15:37.109109+00",
+    "updated_at": "2025-06-21 05:15:37.109109+00",
+    "category_id": 1,
+    "sub_category_id": 2
+  },
+  {
+    "id": "10",
+    "title": "Formal Striped Shirt",
+    "image_url": "https://cdn.pixabay.com/photo/2017/09/29/19/08/formal-wear-2800136_1280.jpg",
+    "short_info": "Casual cotton formal striped shirt.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "neck": "Collar Neck",
+      "length": "Full",
+      "sleeves": "Full"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:16:33.453408+00",
+    "updated_at": "2025-06-21 05:16:33.453408+00",
+    "category_id": 1,
+    "sub_category_id": 2
+  },
+  {
+    "id": "11",
+    "title": "Denim Jeans",
+    "image_url": "https://cdn.pixabay.com/photo/2018/10/11/17/26/male-3740352_1280.jpg",
+    "short_info": "Narrow denim with gray wash.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4500",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Denim",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "length": "Full"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:21:39.212913+00",
+    "updated_at": "2025-06-21 05:21:39.212913+00",
+    "category_id": 1,
+    "sub_category_id": 3
+  },
+  {
+    "id": "12",
+    "title": "Denim Blue Jeans",
+    "image_url": "https://cdn.pixabay.com/photo/2018/10/11/17/26/male-3740355_1280.jpg",
+    "short_info": "Narrow denim with blue wash.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Denim",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "length": "Full"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:25:15.976825+00",
+    "updated_at": "2025-06-21 05:25:15.976825+00",
+    "category_id": 1,
+    "sub_category_id": 3
+  },
+  {
+    "id": "13",
+    "title": "Denim Ripped Blue Jeans",
+    "image_url": "https://cdn.pixabay.com/photo/2018/10/11/17/25/male-3740351_1280.jpg",
+    "short_info": "Narrow denim with blue wash and ripped effect",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Denim",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "length": "Full"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:26:32.500585+00",
+    "updated_at": "2025-06-21 05:26:32.500585+00",
+    "category_id": 1,
+    "sub_category_id": 3
+  },
+  {
+    "id": "14",
+    "title": "Black Formal Trousers",
+    "image_url": "https://cdn.pixabay.com/photo/2017/09/11/05/31/suit-2737909_1280.jpg",
+    "short_info": "Narrow formal trousers, pure cotton for men.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "15",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "length": "Full"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:28:26.749442+00",
+    "updated_at": "2025-06-21 05:28:26.749442+00",
+    "category_id": 1,
+    "sub_category_id": 3
+  },
+  {
+    "id": "15",
+    "title": "Plain Gray Cotton Trousers",
+    "image_url": "https://cdn.pixabay.com/photo/2018/10/11/17/28/male-3740368_1280.jpg",
+    "short_info": "Plain gray formal trousers, pure cotton for men.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "length": "Full"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:30:24.138165+00",
+    "updated_at": "2025-06-21 05:30:24.138165+00",
+    "category_id": 1,
+    "sub_category_id": 3
+  },
+  {
+    "id": "16",
+    "title": "Black Sando",
+    "image_url": "https://cdn.pixabay.com/photo/2020/11/04/05/07/fitness-and-health-5711488_1280.jpg",
+    "short_info": "Plain black sando, sweat proof.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Breathable Material",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "No Sleeves"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:34:31.045552+00",
+    "updated_at": "2025-06-21 05:34:31.045552+00",
+    "category_id": 1,
+    "sub_category_id": 4
+  },
+  {
+    "id": "17",
+    "title": "Black Shorts",
+    "image_url": "https://cdn.pixabay.com/photo/2016/02/16/19/27/man-1203899_1280.jpg",
+    "short_info": "Plain black shorts, sweat proof.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4500",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Breathable Material",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "length": "Full"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:37:09.564883+00",
+    "updated_at": "2025-06-21 05:37:09.564883+00",
+    "category_id": 1,
+    "sub_category_id": 4
+  },
+  {
+    "id": "18",
+    "title": "Black Printed Shorts",
+    "image_url": "https://cdn.pixabay.com/photo/2021/08/22/22/09/man-6566251_1280.jpg",
+    "short_info": "Printed black shorts, sweat proof.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Breathable Material",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "length": "Full"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:39:45.951491+00",
+    "updated_at": "2025-06-21 05:39:45.951491+00",
+    "category_id": 1,
+    "sub_category_id": 4
+  },
+  {
+    "id": "19",
+    "title": "Plain Black T-Shirt",
+    "image_url": "https://cdn.pixabay.com/photo/2020/02/23/09/51/fitness-4872817_1280.jpg",
+    "short_info": "Plain Black Shirt, sweat proof.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "15",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Breathable Material",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "neck": "V Neck",
+      "length": "Full",
+      "sleeves": "Half"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:43:16.593885+00",
+    "updated_at": "2025-06-21 05:43:16.593885+00",
+    "category_id": 1,
+    "sub_category_id": 4
+  },
+  {
+    "id": "20",
+    "title": "Beige Cotton Tracks",
+    "image_url": "https://cdn.pixabay.com/photo/2024/05/22/08/58/man-8780140_1280.jpg",
+    "short_info": "Beige track pant, for men.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "6000",
+    "discount": "15",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'8 wearing size L"
+    },
+    "specifications": {
+      "length": "Full"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:44:42.278795+00",
+    "updated_at": "2025-06-21 05:44:42.278795+00",
+    "category_id": 1,
+    "sub_category_id": 4
+  },
+  {
+    "id": "21",
+    "title": "Pink Casual Tshirt",
+    "image_url": "https://cdn.pixabay.com/photo/2023/10/24/02/01/women-8337216_1280.jpg",
+    "short_info": "Pink casual printed tshirt, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "15",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Half"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:46:57.401296+00",
+    "updated_at": "2025-06-21 05:46:57.401296+00",
+    "category_id": 2,
+    "sub_category_id": 6
+  },
+  {
+    "id": "22",
+    "title": "Big Tees",
+    "image_url": "https://cdn.pixabay.com/photo/2019/12/04/13/12/woman-4672683_1280.jpg",
+    "short_info": "Plain gray casual tee, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Half"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:48:19.162315+00",
+    "updated_at": "2025-06-21 05:48:19.162315+00",
+    "category_id": 2,
+    "sub_category_id": 6
+  },
+  {
+    "id": "23",
+    "title": "Big Tees - Printed",
+    "image_url": "https://cdn.pixabay.com/photo/2022/10/09/09/12/woman-7508618_1280.jpg",
+    "short_info": "Printed black casual tee, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Half"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:49:28.987929+00",
+    "updated_at": "2025-06-21 05:49:28.987929+00",
+    "category_id": 2,
+    "sub_category_id": 6
+  },
+  {
+    "id": "24",
+    "title": "White Casual T-shirt",
+    "image_url": "https://cdn.pixabay.com/photo/2016/03/03/17/34/jeans-1234687_1280.jpg",
+    "short_info": "Printed white casual tee, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "15",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Half"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:51:19.712168+00",
+    "updated_at": "2025-06-21 05:51:19.712168+00",
+    "category_id": 2,
+    "sub_category_id": 6
+  },
+  {
+    "id": "25",
+    "title": "White Graphic T-shirt",
+    "image_url": "https://cdn.pixabay.com/photo/2025/03/15/06/40/woman-9471576_1280.jpg",
+    "short_info": "Printed white graphic tee, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4500",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Half"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:52:36.638268+00",
+    "updated_at": "2025-06-21 05:52:36.638268+00",
+    "category_id": 2,
+    "sub_category_id": 6
+  },
+  {
+    "id": "26",
+    "title": "Casual Sando",
+    "image_url": "https://cdn.pixabay.com/photo/2014/10/13/18/10/girl-487065_1280.jpg",
+    "short_info": "Plain yellow casual sando, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "15",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Half"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:56:45.16961+00",
+    "updated_at": "2025-06-21 05:56:45.16961+00",
+    "category_id": 2,
+    "sub_category_id": 7
+  },
+  {
+    "id": "27",
+    "title": "Plain Casual Top",
+    "image_url": "https://cdn.pixabay.com/photo/2020/06/30/09/20/vietnamese-women-5355708_1280.jpg",
+    "short_info": "Plain pink casual top, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Full"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:58:08.25303+00",
+    "updated_at": "2025-06-21 05:58:08.25303+00",
+    "category_id": 2,
+    "sub_category_id": 7
+  },
+  {
+    "id": "28",
+    "title": "Checked Casual Top",
+    "image_url": "https://cdn.pixabay.com/photo/2023/09/02/11/43/woman-8228723_1280.jpg",
+    "short_info": "Checked pink casual top, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Full"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 05:59:13.688151+00",
+    "updated_at": "2025-06-21 05:59:13.688151+00",
+    "category_id": 2,
+    "sub_category_id": 7
+  },
+  {
+    "id": "29",
+    "title": "Net Casual Top",
+    "image_url": "https://cdn.pixabay.com/photo/2020/04/27/10/21/spring-5099152_1280.jpg",
+    "short_info": "Net black top, party wear, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4500",
+    "discount": "10",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Net Material",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Full"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:01:19.666591+00",
+    "updated_at": "2025-06-21 06:01:19.666591+00",
+    "category_id": 2,
+    "sub_category_id": 7
+  },
+  {
+    "id": "30",
+    "title": "Pink Casual Sando",
+    "image_url": "https://cdn.pixabay.com/photo/2016/07/05/09/31/portrait-1498350_1280.jpg",
+    "short_info": "Plain pink sando, casual wear for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "15",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "No Sleeves"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:02:57.938609+00",
+    "updated_at": "2025-06-21 06:02:57.938609+00",
+    "category_id": 2,
+    "sub_category_id": 7
+  },
+  {
+    "id": "31",
+    "title": "White Maxi Dress",
+    "image_url": "https://cdn.pixabay.com/photo/2018/04/02/13/50/girl-3283916_1280.jpg",
+    "short_info": "Georgette white maxi, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Georgette",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Full"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:04:50.353275+00",
+    "updated_at": "2025-06-21 06:04:50.353275+00",
+    "category_id": 2,
+    "sub_category_id": 8
+  },
+  {
+    "id": "32",
+    "title": "Mini Dress",
+    "image_url": "https://cdn.pixabay.com/photo/2022/07/20/05/15/women-7333420_1280.jpg",
+    "short_info": "Printed casual mini dress, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "10",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Georgette",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Mini",
+      "sleeves": "No Sleeves"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:06:25.979066+00",
+    "updated_at": "2025-06-21 06:06:25.979066+00",
+    "category_id": 2,
+    "sub_category_id": 8
+  },
+  {
+    "id": "33",
+    "title": "Red Party Wear Dress",
+    "image_url": "https://cdn.pixabay.com/photo/2020/10/16/16/52/model-5660013_1280.jpg",
+    "short_info": "Plain red party wear dress, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Georgette",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "V Neck",
+      "length": "Full",
+      "sleeves": "No Sleeves"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:07:55.190593+00",
+    "updated_at": "2025-06-21 06:07:55.190593+00",
+    "category_id": 2,
+    "sub_category_id": 8
+  },
+  {
+    "id": "34",
+    "title": "Plain Casual Midi Dress",
+    "image_url": "https://cdn.pixabay.com/photo/2017/10/04/21/27/girl-2817684_1280.jpg",
+    "short_info": "Plain casual formal dress, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Georgette",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Midi",
+      "sleeves": "Half Sleeves"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:10:03.557228+00",
+    "updated_at": "2025-06-21 06:10:03.557228+00",
+    "category_id": 2,
+    "sub_category_id": 8
+  },
+  {
+    "id": "35",
+    "title": "Bodycon Midi Dress",
+    "image_url": "https://cdn.pixabay.com/photo/2020/03/17/14/43/dress-4940550_1280.jpg",
+    "short_info": "Plain lavendar bodycon dress, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5500",
+    "discount": "10",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Georgette",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "V Neck",
+      "length": "Midi",
+      "sleeves": "No Sleeves"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:11:47.946701+00",
+    "updated_at": "2025-06-21 06:11:47.946701+00",
+    "category_id": 2,
+    "sub_category_id": 8
+  },
+  {
+    "id": "36",
+    "title": "Beige Designer Saree",
+    "image_url": "https://cdn.pixabay.com/photo/2017/05/12/11/47/buy-sarees-online-in-india-2306851_1280.jpg",
+    "short_info": "Beige designer saree with blouse material, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "6000",
+    "discount": "15",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Georgette",
+      "sizeAndFit": "Model height is 5'6"
+    },
+    "specifications": null,
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:14:50.263535+00",
+    "updated_at": "2025-06-21 06:14:50.263535+00",
+    "category_id": 2,
+    "sub_category_id": 9
+  },
+  {
+    "id": "37",
+    "title": "Red Designer Saree",
+    "image_url": "https://cdn.pixabay.com/photo/2022/11/20/06/31/woman-7603569_1280.jpg",
+    "short_info": "Red designer saree with blouse material, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "6000",
+    "discount": "15",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Silk",
+      "sizeAndFit": "Model height is 5'6"
+    },
+    "specifications": null,
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:17:14.866227+00",
+    "updated_at": "2025-06-21 06:17:14.866227+00",
+    "category_id": 2,
+    "sub_category_id": 9
+  },
+  {
+    "id": "38",
+    "title": "Pure Cotton Saree",
+    "image_url": "https://cdn.pixabay.com/photo/2020/08/19/17/59/woman-5501688_1280.jpg",
+    "short_info": "Printed blue cotton saree with blouse material, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "15",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'6"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:18:12.95559+00",
+    "updated_at": "2025-06-21 06:18:12.95559+00",
+    "category_id": 2,
+    "sub_category_id": 9
+  },
+  {
+    "id": "39",
+    "title": "Organza Designer Saree",
+    "image_url": "https://cdn.pixabay.com/photo/2025/03/24/18/44/woman-9491202_1280.jpg",
+    "short_info": "Printed gray organza saree with blouse material, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "15",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Organza",
+      "sizeAndFit": "Model height is 5'6"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:20:03.744395+00",
+    "updated_at": "2025-06-21 06:20:03.744395+00",
+    "category_id": 2,
+    "sub_category_id": 9
+  },
+  {
+    "id": "40",
+    "title": "Paithani Saree",
+    "image_url": "https://cdn.pixabay.com/photo/2015/11/19/11/18/wedding-paithani-saree-1050925_1280.jpg",
+    "short_info": "Purple paithani with blouse material, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Silk",
+      "sizeAndFit": "Model height is 5'6"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:22:15.859344+00",
+    "updated_at": "2025-06-21 06:22:15.859344+00",
+    "category_id": 2,
+    "sub_category_id": 9
+  },
+  {
+    "id": "41",
+    "title": "Silk Kurta Set",
+    "image_url": "https://cdn.pixabay.com/photo/2022/12/04/07/03/woman-7633843_1280.jpg",
+    "short_info": "Teal kurta set with georgette dupatta, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "15",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Silk",
+      "sizeAndFit": "Model height is 5'6 wearing size M"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Half Sleeves"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:26:25.387099+00",
+    "updated_at": "2025-06-21 06:26:25.387099+00",
+    "category_id": 2,
+    "sub_category_id": 10
+  },
+  {
+    "id": "42",
+    "title": "Georgette Kurta Set",
+    "image_url": "https://cdn.pixabay.com/photo/2022/09/22/09/54/woman-7472039_1280.jpg",
+    "short_info": "Pink kurta set with dupatta, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "10",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Georgette",
+      "sizeAndFit": "Model height is 5'6 wearing size M"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Half Sleeves"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:28:17.905817+00",
+    "updated_at": "2025-06-21 06:28:17.905817+00",
+    "category_id": 2,
+    "sub_category_id": 10
+  },
+  {
+    "id": "43",
+    "title": "Cotton Chudidar",
+    "image_url": "https://cdn.pixabay.com/photo/2015/07/15/16/52/salwar-kameez-846702_1280.jpg",
+    "short_info": "Cotton kurta set with dupatta, for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "3500",
+    "discount": "5",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model height is 5'6 wearing size M"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Half Sleeves"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:29:27.337909+00",
+    "updated_at": "2025-06-21 06:29:27.337909+00",
+    "category_id": 2,
+    "sub_category_id": 10
+  },
+  {
+    "id": "44",
+    "title": "Plain Green Shorts",
+    "image_url": "https://cdn.pixabay.com/photo/2025/05/23/10/41/gym-9617468_1280.jpg",
+    "short_info": "Plain green shorts, sweatproof.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4500",
+    "discount": "5",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Breathable Material",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "length": "Short"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:32:57.94129+00",
+    "updated_at": "2025-06-21 06:32:57.94129+00",
+    "category_id": 2,
+    "sub_category_id": 11
+  },
+  {
+    "id": "45",
+    "title": "Plain White Tights",
+    "image_url": "https://cdn.pixabay.com/photo/2021/01/18/22/09/woman-5929630_1280.jpg",
+    "short_info": "Plain gwhite tights, sweatproof.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4500",
+    "discount": "10",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Breathable Material",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "length": "Full"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:34:23.419056+00",
+    "updated_at": "2025-06-21 06:34:23.419056+00",
+    "category_id": 2,
+    "sub_category_id": 11
+  },
+  {
+    "id": "46",
+    "title": "T Bra",
+    "image_url": "https://cdn.pixabay.com/photo/2022/10/22/12/32/gym-7539141_1280.jpg",
+    "short_info": "Plain purple bra, sweatproof.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "10",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Breathable Material",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Crop",
+      "sleeves": "Half Sleeves"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:35:51.635722+00",
+    "updated_at": "2025-06-21 06:35:51.635722+00",
+    "category_id": 2,
+    "sub_category_id": 11
+  },
+  {
+    "id": "47",
+    "title": "Teal Gym Wear",
+    "image_url": "https://cdn.pixabay.com/photo/2024/02/10/02/46/fitness-8564036_1280.jpg",
+    "short_info": "Complete gymwear for women, sweatproof.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Breathable Material",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Crop",
+      "sleeves": "No Sleeves"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:37:12.257562+00",
+    "updated_at": "2025-06-21 06:37:12.257562+00",
+    "category_id": 2,
+    "sub_category_id": 11
+  },
+  {
+    "id": "48",
+    "title": "Printed Blue Gym Wear",
+    "image_url": "https://cdn.pixabay.com/photo/2023/03/05/23/46/girl-7832385_1280.jpg",
+    "short_info": "Complete gymwear for women, sweatproof.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Dry Clean",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Breathable Material",
+      "sizeAndFit": "Model height is 5'6 wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "No Sleeves"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:39:30.137429+00",
+    "updated_at": "2025-06-21 06:39:30.137429+00",
+    "category_id": 2,
+    "sub_category_id": 11
+  },
+  {
+    "id": "49",
+    "title": "Printed Cotton Frock",
+    "image_url": "https://cdn.pixabay.com/photo/2015/04/24/20/58/girl-738303_1280.jpg",
+    "short_info": "Pure cotton frock for kids.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "3000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model is 3 years old wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Knee Length",
+      "sleeves": "No Sleeves"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:42:52.571288+00",
+    "updated_at": "2025-06-21 06:42:52.571288+00",
+    "category_id": 3,
+    "sub_category_id": 12
+  },
+  {
+    "id": "50",
+    "title": "Plain Cotton Frock",
+    "image_url": "https://cdn.pixabay.com/photo/2021/04/12/21/46/girl-6174060_1280.jpg",
+    "short_info": "Plain maroon cotton frock for kids.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "3000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model is 3 years old wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Knee Length",
+      "sleeves": "No Sleeves"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:43:36.238165+00",
+    "updated_at": "2025-06-21 06:43:36.238165+00",
+    "category_id": 3,
+    "sub_category_id": 12
+  },
+  {
+    "id": "51",
+    "title": "Printed Casual Cotton Frock",
+    "image_url": "https://cdn.pixabay.com/photo/2014/09/27/14/28/child-463558_1280.jpg",
+    "short_info": "Printed casual cotton frock for kids.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "3000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model is 4 years old wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Knee Length",
+      "sleeves": "Flared"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:45:11.925533+00",
+    "updated_at": "2025-06-21 06:45:11.925533+00",
+    "category_id": 3,
+    "sub_category_id": 12
+  },
+  {
+    "id": "52",
+    "title": "Checked Casual Cotton Frock",
+    "image_url": "https://cdn.pixabay.com/photo/2016/11/29/04/23/little-girl-1867297_1280.jpg",
+    "short_info": "Printed casual cotton frock for kids.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "3000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model is 3 years old wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Knee Length",
+      "sleeves": "No Sleeves"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:46:29.426647+00",
+    "updated_at": "2025-06-21 06:46:29.426647+00",
+    "category_id": 3,
+    "sub_category_id": 12
+  },
+  {
+    "id": "53",
+    "title": "Casual Cotton Frock",
+    "image_url": "https://cdn.pixabay.com/photo/2022/05/23/19/53/child-7217086_1280.jpg",
+    "short_info": "Printed casual cotton frock for kids.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "3000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model is 3 years old wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Knee Length",
+      "sleeves": "Full Sleeves"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:47:01.104837+00",
+    "updated_at": "2025-06-21 06:47:01.104837+00",
+    "category_id": 3,
+    "sub_category_id": 12
+  },
+  {
+    "id": "54",
+    "title": "Casual Denim",
+    "image_url": "https://cdn.pixabay.com/photo/2015/08/27/05/48/boy-909554_1280.jpg",
+    "short_info": "Denim casual wear for kids.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "3500",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Denim",
+      "sizeAndFit": "Model is 3 years old wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "sleeves": "No Sleeves"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:48:53.272658+00",
+    "updated_at": "2025-06-21 06:48:53.272658+00",
+    "category_id": 3,
+    "sub_category_id": 13
+  },
+  {
+    "id": "55",
+    "title": "Casual Pink T-shirt",
+    "image_url": "https://cdn.pixabay.com/photo/2015/10/02/04/52/baby-968096_1280.jpg",
+    "short_info": "Pink casual t-shirt for kids.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "3500",
+    "discount": "15",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model is 3 years old wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Half"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:51:04.157424+00",
+    "updated_at": "2025-06-21 06:51:04.157424+00",
+    "category_id": 3,
+    "sub_category_id": 13
+  },
+  {
+    "id": "56",
+    "title": "Casual Printed T-shirt",
+    "image_url": "https://cdn.pixabay.com/photo/2013/04/20/21/53/kid-106000_1280.jpg",
+    "short_info": "Printed casual t-shirt for kids.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "3500",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Cotton",
+      "sizeAndFit": "Model is 3 years old wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Half"
+    },
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:51:50.824521+00",
+    "updated_at": "2025-06-21 06:51:50.824521+00",
+    "category_id": 3,
+    "sub_category_id": 13
+  },
+  {
+    "id": "57",
+    "title": "Cozy Jackets",
+    "image_url": "https://cdn.pixabay.com/photo/2021/08/13/13/11/kid-6543096_1280.jpg",
+    "short_info": "Cozy casual jackets for kids.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Breathable Material",
+      "sizeAndFit": "Model is 3 years old wearing size S"
+    },
+    "specifications": {
+      "neck": "Round Neck",
+      "length": "Full",
+      "sleeves": "Full"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:53:09.088415+00",
+    "updated_at": "2025-06-21 06:53:09.088415+00",
+    "category_id": 3,
+    "sub_category_id": 13
+  },
+  {
+    "id": "58",
+    "title": "Denim Shirt",
+    "image_url": "https://cdn.pixabay.com/photo/2022/09/22/06/56/kid-7471803_1280.jpg",
+    "short_info": "Casual denim shirt for kids.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "10",
+    "details": {
+      "care": "Machine Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Pure Denim",
+      "sizeAndFit": "Model is 3 years old wearing size S"
+    },
+    "specifications": {
+      "neck": "Collar Neck",
+      "length": "Full",
+      "sleeves": "Half"
+    },
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:54:44.260348+00",
+    "updated_at": "2025-06-21 06:54:44.260348+00",
+    "category_id": 3,
+    "sub_category_id": 13
+  },
+  {
+    "id": "59",
+    "title": "Classic Formal Shoes",
+    "image_url": "https://cdn.pixabay.com/photo/2017/08/20/10/28/leather-shoes-2661198_1280.jpg",
+    "short_info": "Black classic formal shoes for men.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "15",
+    "details": {
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Leather",
+      "sizeAndFit": "Model is 5'8 in height wearing size UK 7"
+    },
+    "specifications": null,
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 06:59:45.157036+00",
+    "updated_at": "2025-06-21 06:59:45.157036+00",
+    "category_id": 4,
+    "sub_category_id": 14
+  },
+  {
+    "id": "60",
+    "title": "Casual Sneakers",
+    "image_url": "https://cdn.pixabay.com/photo/2015/11/06/15/13/shoes-1028790_1280.jpg",
+    "short_info": "Casual sneakers for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "15",
+    "details": {
+      "care": "Hand Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Washable Material",
+      "sizeAndFit": "Model is 5'6 in height wearing size UK 7"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:03:11.049667+00",
+    "updated_at": "2025-06-21 07:03:11.049667+00",
+    "category_id": 4,
+    "sub_category_id": 14
+  },
+  {
+    "id": "61",
+    "title": "Gym Shoes",
+    "image_url": "https://cdn.pixabay.com/photo/2017/04/26/18/12/running-shoes-2263268_1280.jpg",
+    "short_info": "White gymm shoes for training.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4500",
+    "discount": "10",
+    "details": {
+      "care": "Hand Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Washable Material",
+      "sizeAndFit": "Model is 5'6 in height wearing size UK 7"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:04:26.898373+00",
+    "updated_at": "2025-06-21 07:04:26.898373+00",
+    "category_id": 4,
+    "sub_category_id": 14
+  },
+  {
+    "id": "62",
+    "title": "Hiking Shoes",
+    "image_url": "https://cdn.pixabay.com/photo/2015/04/20/03/03/shoes-730590_1280.jpg",
+    "short_info": "Leather shoes for hiking.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "6000",
+    "discount": "10",
+    "details": {
+      "care": "Hand Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Leather",
+      "sizeAndFit": "Model is 5'6 in height wearing size UK 7"
+    },
+    "specifications": null,
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:06:28.587157+00",
+    "updated_at": "2025-06-21 07:06:28.587157+00",
+    "category_id": 4,
+    "sub_category_id": 14
+  },
+  {
+    "id": "63",
+    "title": "Running Shoes",
+    "image_url": "https://cdn.pixabay.com/photo/2021/06/03/08/05/sneep-crew-6306331_1280.jpg",
+    "short_info": "White running shoes unisex.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "6000",
+    "discount": "10",
+    "details": {
+      "care": "Hand Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Leather",
+      "sizeAndFit": "Model is 5'6 in height wearing size UK 7"
+    },
+    "specifications": null,
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:07:12.626504+00",
+    "updated_at": "2025-06-21 07:07:12.626504+00",
+    "category_id": 4,
+    "sub_category_id": 14
+  },
+  {
+    "id": "64",
+    "title": "Casual Flip Flops",
+    "image_url": "https://cdn.pixabay.com/photo/2019/07/29/15/36/slipper-4370860_1280.jpg",
+    "short_info": "Casual white flip flops, unisex.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "3500",
+    "discount": "10",
+    "details": {
+      "care": "Hand Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Rubber",
+      "sizeAndFit": "Model is 5'6 in height wearing size UK 7"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:09:37.709671+00",
+    "updated_at": "2025-06-21 07:09:37.709671+00",
+    "category_id": 4,
+    "sub_category_id": 15
+  },
+  {
+    "id": "65",
+    "title": "Summer Flip Flops",
+    "image_url": "https://cdn.pixabay.com/photo/2013/01/10/08/58/summer-74500_1280.jpg",
+    "short_info": "Casual printed flip flops, unisex.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "3500",
+    "discount": "10",
+    "details": {
+      "care": "Hand Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Rubber",
+      "sizeAndFit": "Model is 5'6 in height wearing size UK 7"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:10:55.731944+00",
+    "updated_at": "2025-06-21 07:10:55.731944+00",
+    "category_id": 4,
+    "sub_category_id": 15
+  },
+  {
+    "id": "66",
+    "title": "Pearl Sandals",
+    "image_url": "https://cdn.pixabay.com/photo/2021/01/06/09/14/feet-5893695_1280.jpg",
+    "short_info": "Pearl sandals in white for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "10",
+    "details": {
+      "care": "Hand Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Rubber",
+      "sizeAndFit": "Model is 5'6 in height wearing size UK 7"
+    },
+    "specifications": null,
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:14:33.135425+00",
+    "updated_at": "2025-06-21 07:14:33.135425+00",
+    "category_id": 4,
+    "sub_category_id": 15
+  },
+  {
+    "id": "67",
+    "title": "Pink Sandals",
+    "image_url": "https://cdn.pixabay.com/photo/2016/07/16/12/41/sandal-1521473_1280.jpg",
+    "short_info": "Pink shoe sandals for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "3500",
+    "discount": "10",
+    "details": {
+      "care": "Hand Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Rubber",
+      "sizeAndFit": "Model is 5'6 in height wearing size UK 7"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:15:27.231904+00",
+    "updated_at": "2025-06-21 07:15:27.231904+00",
+    "category_id": 4,
+    "sub_category_id": 15
+  },
+  {
+    "id": "68",
+    "title": "White Heels",
+    "image_url": "https://cdn.pixabay.com/photo/2019/12/15/15/35/bride-4697357_1280.jpg",
+    "short_info": "Bella shoes with heels for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Hand Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Leather",
+      "sizeAndFit": "Model is 5'6 in height wearing size UK 7"
+    },
+    "specifications": null,
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:17:17.369364+00",
+    "updated_at": "2025-06-21 07:17:17.369364+00",
+    "category_id": 4,
+    "sub_category_id": 16
+  },
+  {
+    "id": "69",
+    "title": "White Lace Heels",
+    "image_url": "https://cdn.pixabay.com/photo/2017/08/06/15/11/heel-2593356_1280.jpg",
+    "short_info": "Bella lace shoes with heels for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Hand Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Leather",
+      "sizeAndFit": "Model is 5'6 in height wearing size UK 7"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:18:03.844966+00",
+    "updated_at": "2025-06-21 07:18:03.844966+00",
+    "category_id": 4,
+    "sub_category_id": 16
+  },
+  {
+    "id": "70",
+    "title": "Red Heels",
+    "image_url": "https://cdn.pixabay.com/photo/2016/07/04/06/04/beijing-1496006_1280.jpg",
+    "short_info": "Bella shoes in red with heels for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Hand Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Leather",
+      "sizeAndFit": "Model is 5'6 in height wearing size UK 7"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:18:46.620169+00",
+    "updated_at": "2025-06-21 07:18:46.620169+00",
+    "category_id": 4,
+    "sub_category_id": 16
+  },
+  {
+    "id": "71",
+    "title": "Teal Classic Heels",
+    "image_url": "https://cdn.pixabay.com/photo/2020/02/21/09/07/sandals-4866934_1280.jpg",
+    "short_info": "Teal sandal with heels for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "15",
+    "details": {
+      "care": "Hand Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Leather",
+      "sizeAndFit": "Model is 5'6 in height wearing size UK 7"
+    },
+    "specifications": null,
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:20:04.868241+00",
+    "updated_at": "2025-06-21 07:20:04.868241+00",
+    "category_id": 4,
+    "sub_category_id": 16
+  },
+  {
+    "id": "72",
+    "title": "Black Classic Heels",
+    "image_url": "https://cdn.pixabay.com/photo/2022/12/09/17/03/legs-7645710_1280.jpg",
+    "short_info": "Black sandal with heels for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "15",
+    "details": {
+      "care": "Hand Wash",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Leather",
+      "sizeAndFit": "Model is 5'6 in height wearing size UK 7"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:21:08.753846+00",
+    "updated_at": "2025-06-21 07:21:08.753846+00",
+    "category_id": 4,
+    "sub_category_id": 16
+  },
+  {
+    "id": "73",
+    "title": "Classic Silver Watch",
+    "image_url": "https://cdn.pixabay.com/photo/2022/09/05/18/48/watch-7434946_1280.jpg",
+    "short_info": "Classic modern silver watch for men",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Individual maintenance",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "sizeAndFit": "Model is 5'6 in height"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:23:01.117924+00",
+    "updated_at": "2025-06-21 07:23:01.117924+00",
+    "category_id": 5,
+    "sub_category_id": 17
+  },
+  {
+    "id": "74",
+    "title": "Classic Dial Watch",
+    "image_url": "https://cdn.pixabay.com/photo/2022/09/05/18/48/watch-7434946_1280.jpg",
+    "short_info": "Classic modern dial watch for men",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4500",
+    "discount": "10",
+    "details": {
+      "care": "Individual maintenance",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "sizeAndFit": "Model is 5'6 in height"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:25:17.27313+00",
+    "updated_at": "2025-06-21 07:25:17.27313+00",
+    "category_id": 5,
+    "sub_category_id": 17
+  },
+  {
+    "id": "75",
+    "title": "Classic Golden Watch",
+    "image_url": "https://cdn.pixabay.com/photo/2021/08/10/14/56/man-6536156_1280.jpg",
+    "short_info": "Classic golden watch, unisex",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4500",
+    "discount": "10",
+    "details": {
+      "care": "Individual maintenance",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "sizeAndFit": "Model is 5'6 in height"
+    },
+    "specifications": null,
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:26:33.738462+00",
+    "updated_at": "2025-06-21 07:26:33.738462+00",
+    "category_id": 5,
+    "sub_category_id": 17
+  },
+  {
+    "id": "76",
+    "title": "Casual Leather Bag",
+    "image_url": "https://cdn.pixabay.com/photo/2020/11/16/10/32/bag-5748628_1280.jpg",
+    "short_info": "Classic leather bag for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "10",
+    "details": {
+      "care": "Individual maintenance",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Leather",
+      "sizeAndFit": "Model is 5'6 in height"
+    },
+    "specifications": null,
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:30:40.103276+00",
+    "updated_at": "2025-06-21 07:30:40.103276+00",
+    "category_id": 5,
+    "sub_category_id": 18
+  },
+  {
+    "id": "77",
+    "title": "Casual Shopping Bag",
+    "image_url": "https://cdn.pixabay.com/photo/2019/07/22/17/15/bag-4355625_1280.jpg",
+    "short_info": "Classic green leather bag for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "15",
+    "details": {
+      "care": "Individual maintenance",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Leather",
+      "sizeAndFit": "Model is 5'6 in height"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:31:37.438024+00",
+    "updated_at": "2025-06-21 07:31:37.438024+00",
+    "category_id": 5,
+    "sub_category_id": 18
+  },
+  {
+    "id": "78",
+    "title": "Handmade Hand Bag",
+    "image_url": "https://cdn.pixabay.com/photo/2020/03/13/04/06/handmade-4926873_1280.jpg",
+    "short_info": "Environment friendly hand bag for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4500",
+    "discount": "15",
+    "details": {
+      "care": "Individual maintenance",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Leather",
+      "sizeAndFit": "Model is 5'6 in height"
+    },
+    "specifications": null,
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:32:43.072779+00",
+    "updated_at": "2025-06-21 07:32:43.072779+00",
+    "category_id": 5,
+    "sub_category_id": 18
+  },
+  {
+    "id": "79",
+    "title": "Leather Purse",
+    "image_url": "https://cdn.pixabay.com/photo/2024/05/28/11/14/woman-8793611_1280.jpg",
+    "short_info": "Brown leather purse for women",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4500",
+    "discount": "10",
+    "details": {
+      "care": "Individual maintenance",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Leather",
+      "sizeAndFit": "Model is 5'6 in height"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:33:40.43795+00",
+    "updated_at": "2025-06-21 07:33:40.43795+00",
+    "category_id": 5,
+    "sub_category_id": 18
+  },
+  {
+    "id": "80",
+    "title": "Cloth Hand Bag",
+    "image_url": "https://cdn.pixabay.com/photo/2024/08/22/08/27/handbag-8988650_1280.jpg",
+    "short_info": "Handmade stiched hand bag, unisex",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "4000",
+    "discount": "10",
+    "details": {
+      "care": "Individual maintenance",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Cloth",
+      "sizeAndFit": "Model is 5'6 in height"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:35:11.908527+00",
+    "updated_at": "2025-06-21 07:35:11.908527+00",
+    "category_id": 5,
+    "sub_category_id": 18
+  },
+  {
+    "id": "81",
+    "title": "Leather Wallet",
+    "image_url": "https://cdn.pixabay.com/photo/2022/02/11/09/21/leather-wallet-7006897_1280.jpg",
+    "short_info": "Brown leather wallet",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "3000",
+    "discount": "10",
+    "details": {
+      "care": "Individual maintenance",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Leather"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:37:19.05839+00",
+    "updated_at": "2025-06-21 07:37:19.05839+00",
+    "category_id": 5,
+    "sub_category_id": 19
+  },
+  {
+    "id": "82",
+    "title": "Plain Leather Wallet",
+    "image_url": "https://cdn.pixabay.com/photo/2021/10/17/23/03/cardholder-6719744_1280.jpg",
+    "short_info": "Black leather wallet for men.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "3000",
+    "discount": "10",
+    "details": {
+      "care": "Individual maintenance",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "material": "Leather"
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:38:10.496651+00",
+    "updated_at": "2025-06-21 07:38:10.496651+00",
+    "category_id": 5,
+    "sub_category_id": 19
+  },
+  {
+    "id": "83",
+    "title": "Gold Plated Ring",
+    "image_url": "https://cdn.pixabay.com/photo/2016/03/04/20/11/vera-1236640_1280.jpg",
+    "short_info": "2 pc gold plated ring, unisex.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "15",
+    "details": {
+      "care": "Individual maintenance",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse."
+    },
+    "specifications": null,
+    "is_featured": true,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:40:14.780384+00",
+    "updated_at": "2025-06-21 07:40:14.780384+00",
+    "category_id": 5,
+    "sub_category_id": 20
+  },
+  {
+    "id": "84",
+    "title": "Silver Diamond Ring",
+    "image_url": "https://cdn.pixabay.com/photo/2019/12/15/05/03/ring-4696382_1280.jpg",
+    "short_info": "Silver plated diamond ring for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Individual maintenance",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse."
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:41:57.579728+00",
+    "updated_at": "2025-06-21 07:41:57.579728+00",
+    "category_id": 5,
+    "sub_category_id": 20
+  },
+  {
+    "id": "85",
+    "title": "Rose Coloured Diamond Ring",
+    "image_url": "https://cdn.pixabay.com/photo/2019/11/27/21/14/wedding-4657888_1280.jpg",
+    "short_info": "Rose coloured diamond ring for women.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    "mrp": "5000",
+    "discount": "10",
+    "details": {
+      "care": "Individual maintenance",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse."
+    },
+    "specifications": null,
+    "is_featured": false,
+    "sales_count": "0",
+    "created_at": "2025-06-21 07:42:51.269143+00",
+    "updated_at": "2025-06-21 07:42:51.269143+00",
+    "category_id": 5,
+    "sub_category_id": 20
+  }
+]
