@@ -2,7 +2,7 @@ import appConfig from "./index.js"
 import createAppRouter from "./routes/index.js";
 import {errorHandler} from "./middlewares/errorHandler.js";
 
-const {app, env} = appConfig;
+const {app} = appConfig;
 const PORT = 8080;
 
 const appRoutes = createAppRouter();
