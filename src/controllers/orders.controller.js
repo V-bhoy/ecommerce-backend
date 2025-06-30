@@ -6,7 +6,7 @@ import { createHmac } from "crypto";
 
 const {razorpay} = appConfig;
 
-export const createOrder = async(req, res)=>{
+export const createOrder = async(req, res, next)=>{
     const {items, billingDetails} = req.body;
     const userId = req.user.id;
     const gstAmount = 20;
@@ -68,15 +68,11 @@ export const createOrder = async(req, res)=>{
 
 
     }catch (err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Something went wrong"
-        })
+       next(err);
     }
 }
 
-export const verifyOrderPayment = async(req, res)=>{
+export const verifyOrderPayment = async(req, res, next)=>{
     const { razorpay_order_id, razorpay_payment_id, razorpay_signature } = req.body;
 
     try{
@@ -113,15 +109,11 @@ export const verifyOrderPayment = async(req, res)=>{
             message: "Invalid signature!"
         })
     }catch (err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Something went wrong"
-        })
+        next(err);
     }
 }
 
-export const updateOrderPaymentFailed = async(req, res)=>{
+export const updateOrderPaymentFailed = async(req, res, next)=>{
     const {orderId} = req.body;
     if(!orderId){
         return res.status(400).json({
@@ -140,15 +132,11 @@ export const updateOrderPaymentFailed = async(req, res)=>{
        })
 
     }catch (err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Something went wrong"
-        })
+        next(err);
     }
 }
 
-export const getAllOrdersByUserId = async(req, res)=>{
+export const getAllOrdersByUserId = async(req, res, next)=>{
     const userId = req.user.id;
     try{
       const orders = await OrdersModel.getAllOrders(userId);
@@ -157,10 +145,6 @@ export const getAllOrdersByUserId = async(req, res)=>{
           orders
       })
     }catch(err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Something went wrong"
-        })
+        next(err);
     }
 }

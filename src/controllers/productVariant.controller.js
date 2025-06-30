@@ -1,7 +1,7 @@
 import * as ProductModel from "../models/product.model.js";
 import * as ProductVariantModel from "../models/productVariant.model.js";
 
-export const createProductVariant = async (req, res)=>{
+export const createProductVariant = async (req, res, next)=>{
     const {productId, qty, size} = req.body;
     if(!productId){
         return res.status(400).json({
@@ -28,15 +28,11 @@ export const createProductVariant = async (req, res)=>{
         })
     }
     catch(err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Something went wrong!"
-        })
+        next(err);
     }
 }
 
-export const getAllProductVariants = async(req, res)=>{
+export const getAllProductVariants = async(req, res, next)=>{
     const {productId} = req.params;
     if(!productId || isNaN(productId)){
         return res.status(400).json({
@@ -61,15 +57,11 @@ export const getAllProductVariants = async(req, res)=>{
                 product_id: +item.product_id}))
         })
     }catch(err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Something went wrong!"
-        })
+        next(err);
     }
 }
 
-export const getInStockProductVariants = async(req, res)=>{
+export const getInStockProductVariants = async(req, res, next)=>{
     const {productId} = req.params;
     if(!productId || isNaN(productId)){
         return res.status(400).json({
@@ -94,10 +86,6 @@ export const getInStockProductVariants = async(req, res)=>{
                 product_id: +item.product_id}))
         })
     }catch(err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Something went wrong!"
-        })
+        next(err);
     }
 }

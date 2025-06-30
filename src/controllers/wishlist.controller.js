@@ -1,6 +1,6 @@
 import * as WishlistModel from "../models/wishlist.model.js";
 
-export const wishlistProduct = async(req, res)=>{
+export const wishlistProduct = async(req, res, next)=>{
     const {productId} = req.body;
     const userId = req.user.id;
     if(!userId || !productId){
@@ -28,15 +28,11 @@ export const wishlistProduct = async(req, res)=>{
         })
 
     }catch(err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Server Error"
-        })
+        next(err);
     }
 }
 
-export const removeWishlistProduct = async(req, res)=>{
+export const removeWishlistProduct = async(req, res, next)=>{
     const {productId} = req.body;
     const userId = req.user.id;
     if(!userId || !productId){
@@ -55,11 +51,7 @@ export const removeWishlistProduct = async(req, res)=>{
         })
 
     }catch(err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Server Error"
-        })
+        next(err);
     }
 }
 

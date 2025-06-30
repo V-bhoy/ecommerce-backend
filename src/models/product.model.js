@@ -130,14 +130,16 @@ export const countAllProducts = ({ categoryId, filters = {}, userId = null, only
     } = filters;
 
     const query = db("products as p")
-        .leftJoin("product_variants as pv", "p.id", "pv.product_id")
-        .leftJoin("reviews as r","p.id",  "r.product_id")
-        .groupBy("p.id");
+        .leftJoin("product_variants as pv", "p.id", "pv.product_id");
 
     if (userId) {
         query.leftJoin("wishlist as w", function () {
             this.on("w.product_id", "=", "p.id").andOn("w.customer_id", "=", db.raw("?", [userId]));
         });
+    }
+
+    if (rating) {
+        query.leftJoin("reviews as r", "p.id", "r.product_id");
     }
 
     if (userId && onlyWishlisted) {
@@ -147,21 +149,30 @@ export const countAllProducts = ({ categoryId, filters = {}, userId = null, only
     if (categoryId) {
         query.where("p.category_id", categoryId);
     }
+
     if (subCategoryIds?.length) {
         query.whereIn("p.sub_category_id", subCategoryIds);
     }
+
     if (search) {
         query.whereILike("p.title", `%${search}%`);
     }
+
     if (minPrice && maxPrice) {
         query.whereRaw('(p.mrp - (p.mrp * p.discount / 100)) BETWEEN ? AND ?', [minPrice, maxPrice]);
     }
+
     if (sizes?.length) {
         query.whereIn("pv.size", sizes);
     }
 
-    if (typeof inStock === "boolean") {
+    // Add groupBy only if needed
+    const needsGroup = inStock || rating;
+    if (needsGroup) {
         query.groupBy("p.id");
+    }
+
+    if (typeof inStock === "boolean") {
         query.havingRaw(`SUM(pv.qty) ${inStock ? ">" : "="} 0`);
         return db.from(query.as("sub")).count("* as count");
     }

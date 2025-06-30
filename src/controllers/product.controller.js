@@ -7,7 +7,7 @@ import * as ReviewModel from "../models/review.model.js";
 import {formatProducts} from "../util/format-products.js";
 import {calculatePriceAfterDiscount} from "../util/calculate-price-after-discount.js";
 
-export const saveProduct = async (req, res) => {
+export const saveProduct = async (req, res, next) => {
     const {title, mrp, categoryId, subCategoryId, discount, imageUrl, shortInfo, description, details, specifications, isFeatured} = req.body;
     if (!title || !mrp || !categoryId || !subCategoryId) {
         return res.status(400).json({
@@ -71,12 +71,11 @@ export const saveProduct = async (req, res) => {
             message: "New Product inserted with id - " + id
         })
     } catch (err) {
-        console.log(err);
-        res.status(500).json({error: 'Server error'});
+       next(err);
     }
 }
 
-export const getAllProductsByCategory = async(req, res)=>{
+export const getAllProductsByCategory = async(req, res, next)=>{
     const {category} = req.params;
     const {page =1, limit = 10} = req.query;
     const filters = req.body;
@@ -106,6 +105,8 @@ export const getAllProductsByCategory = async(req, res)=>{
         const totalCount = +(countResult?.count || 0);
         const totalPages = Math.ceil(totalCount/limit);
 
+        console.log(category, categoryExists ,data.length, countResult);
+
         return res.status(200).json({
             success: true,
             products: formatProducts(data),
@@ -116,12 +117,11 @@ export const getAllProductsByCategory = async(req, res)=>{
         })
 
     }catch(err){
-        console.log(err);
-        res.status(500).json({error: 'Server error'});
+       next(err);
     }
 }
 
-export const getIdByCategoryAndSubCategory = async(req, res)=>{
+export const getIdByCategoryAndSubCategory = async(req, res, next)=>{
     const {category, subCategory} = req.query;
     if(!category || !subCategory){
         return res.status(400).json({
@@ -150,12 +150,11 @@ export const getIdByCategoryAndSubCategory = async(req, res)=>{
             subCategoryId: subCategoryExists.id
         })
     }catch(err){
-        console.log(err);
-        res.status(500).json({error: 'Server error'});
+        next(err);
     }
 }
 
-export const getAllHomePageProducts = async(req, res)=>{
+export const getAllHomePageProducts = async(req, res, next)=>{
     try {
         const latestProducts = await ProductModel.findAllLatestProducts();
         const featuredProducts = await ProductModel.findAllFeaturedProducts();
@@ -168,15 +167,11 @@ export const getAllHomePageProducts = async(req, res)=>{
             }
         })
     }catch(err){
-        console.log(err);
-        res.status(500).json({
-            success: false,
-            message: "Internal Server Error"
-        })
+        next(err);
     }
 }
 
-export const getAllPopularProducts = async(req, res)=>{
+export const getAllPopularProducts = async(req, res, next)=>{
     const {categoryId} = req.params;
     if(!categoryId || isNaN(categoryId)){
         res.status(400).json({
@@ -191,15 +186,11 @@ export const getAllPopularProducts = async(req, res)=>{
             data: formatProducts(data)
         })
     }catch(err){
-       console.log(err);
-       return res.status(500).json({
-           success: false,
-           message: "Server Error"
-       })
+      next(err);
     }
 }
 
-export const getProductDetailsById = async(req, res)=>{
+export const getProductDetailsById = async(req, res, next)=>{
     const {productId} = req.params;
     const {viewOnly} = req.query;
     const userId = req.user?.id;
@@ -254,15 +245,11 @@ export const getProductDetailsById = async(req, res)=>{
             complementaryProducts: formatProducts(complementaryProductsResult)
         })
     }catch(err){
-        console.log(err);
-        res.status(500).json({
-            success: false,
-            message: "Internal server error"
-        })
+        next(err);
     }
 }
 
-export const getAllProducts = async(req, res)=>{
+export const getAllProducts = async(req, res, next)=>{
     const {page =1, limit = 10} = req.query;
     const filters = req.body;
     const userId = req.user?.id;
@@ -288,7 +275,6 @@ export const getAllProducts = async(req, res)=>{
        })
 
    }catch(err){
-       console.log(err);
-       res.status(500).json({error: 'Server error'});
+       next(err);
    }
 }

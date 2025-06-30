@@ -1,7 +1,7 @@
 import * as CustomerModel from "../models/customer.model.js";
 import bcrypt from "bcryptjs";
 
-export const fetchCustomerAddress = async(req, res)=>{
+export const fetchCustomerAddress = async(req, res, next)=>{
     const email = req.user.email;
     try{
         const customer = await CustomerModel.findByEmail(email);
@@ -24,11 +24,7 @@ export const fetchCustomerAddress = async(req, res)=>{
         })
 
     }catch(err){
-        console.log(err);
-        res.status(500).json({
-            success: true,
-            message: "Server error"
-        })
+        next(err);
     }
 }
 
@@ -64,11 +60,7 @@ export const updateCustomerAddress = async(req, res)=>{
         })
 
     }catch(err){
-        console.log(err);
-        res.status(500).json({
-            success: true,
-            message: "Server error"
-        })
+        next(err);
     }
 }
 
@@ -95,10 +87,6 @@ export const resetPassword = async(req, res)=>{
         })
 
     }catch (err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Server Error"
-        })
+        next(err);
     }
 }

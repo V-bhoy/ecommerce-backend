@@ -7,6 +7,7 @@ exports.up = function(knex) {
       table.increments("id").primary();
       table.uuid("sku_id");
       table.decimal("mrp", 10, 2).unsigned();
+      table.integer("qty").unsigned();
       table.integer("discount").unsigned();
       table.decimal("item_price", 10, 2).unsigned();
       table.integer("order_id").unsigned().notNullable();

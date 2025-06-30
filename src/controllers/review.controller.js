@@ -2,7 +2,7 @@ import * as ProductModel from "../models/product.model.js";
 import * as ReviewModel from "../models/review.model.js";
 import {countMaxVotes} from "../util/count-max-votes.js";
 
-export const addProductReview = async(req, res)=>{
+export const addProductReview = async(req, res, next)=>{
     const {productId, review, rating, fit, length, transparency} = req.body;
     const userId = req.user.id;
     if(!productId){
@@ -41,15 +41,11 @@ export const addProductReview = async(req, res)=>{
         })
 
     }catch(err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Server Error"
-        })
+        next(err);
     }
 }
 
-export const getProductReviewStats = async(req, res)=>{
+export const getProductReviewStats = async(req, res, next)=>{
     const {productId} = req.params;
     if(!productId){
         return res.status(400).json({
@@ -107,15 +103,11 @@ export const getProductReviewStats = async(req, res)=>{
         })
 
     }catch(err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Server Error"
-        })
+        next(err);
     }
 }
 
-export const getProductReviews = async(req, res)=>{
+export const getProductReviews = async(req, res, next)=>{
     const {productId} = req.params;
     if(!productId){
         return res.status(400).json({
@@ -140,10 +132,6 @@ export const getProductReviews = async(req, res)=>{
         })
 
     }catch(err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Server Error"
-        })
+       next(err);
     }
 }

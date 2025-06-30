@@ -9,7 +9,7 @@ import {generateOtp} from "../util/generate-otp.js";
 import {generateAccessToken, verifyRefreshToken} from "../jwt/jwt-service.js";
 import {sendOtp} from "../util/send-otp.js";
 
-export const registerCustomer = async (req, res) => {
+export const registerCustomer = async (req, res, next) => {
     const {firstName, lastName, email, password} = req.body;
     if (!firstName || !lastName || !email || !password) {
         return res.status(400).json({
@@ -64,14 +64,11 @@ export const registerCustomer = async (req, res) => {
         })
 
     } catch (err) {
-        console.log(err);
-        res.status(500).json({
-            message: "Server Error"
-        })
+       next(err);
     }
 }
 
-export const loginCustomer = async (req, res) => {
+export const loginCustomer = async (req, res, next) => {
     const {email, password} = req.body;
     if (!email || !password) {
         return res.status(400).json({
@@ -124,14 +121,11 @@ export const loginCustomer = async (req, res) => {
         })
 
     } catch (err) {
-        console.log(err);
-        res.status(500).json({
-            message: "Server Error"
-        })
+        next(err);
     }
 }
 
-export const logoutCustomer = async (req, res) => {
+export const logoutCustomer = async (req, res, next) => {
     try {
         res.clearCookie("refreshToken", {
             httpOnly: true,
@@ -143,13 +137,11 @@ export const logoutCustomer = async (req, res) => {
             message: "Logout successful!"
         })
     } catch (err) {
-        res.status(500).json({
-            message: "Server Error"
-        })
+       next(err);
     }
 }
 
-export const refreshToken = async (req, res) => {
+export const refreshToken = async (req, res, next) => {
     const refreshToken = req.cookies.refreshToken;
     if (!refreshToken) {
         return res.status(401).json({
@@ -172,15 +164,11 @@ export const refreshToken = async (req, res) => {
             }
         })
     } catch (err) {
-        console.log(err)
-        return res.status(403).json({
-            success: false,
-            message: "Invalid Refresh Token"
-        })
+       next(err);
     }
 }
 
-export const requestOtp = async (req, res) => {
+export const requestOtp = async (req, res, next) => {
     const {email} = req.body;
     if (!email || !verifyEmail(email)) {
         return res.status(400).json({
@@ -221,15 +209,11 @@ export const requestOtp = async (req, res) => {
         })
 
     } catch (err) {
-        console.log(err);
-        res.status(500).json({
-            success: false,
-            message: "Internal server error"
-        })
+        next(err);
     }
 }
 
-export const resetPasswordByOtpVerification = async(req, res)=>{
+export const resetPasswordByOtpVerification = async(req, res, next)=>{
     const {email, otp, password} = req.body;
     if (!email || !verifyEmail(email)) {
         return res.status(400).json({
@@ -274,15 +258,11 @@ export const resetPasswordByOtpVerification = async(req, res)=>{
             message: "OTP verified, reset password successfully!"
         })
     } catch (err) {
-        console.log(err);
-        res.status(500).json({
-            success: false,
-            message: "Internal server error."
-        })
+        next(err);
     }
 }
 
-export const generateApiAccessToken = async(req, res)=>{
+export const generateApiAccessToken = async(req, res, next)=>{
     const {email} = req.body;
     if(!email || !verifyEmail(email)){
         return res.status(400).json({
@@ -304,10 +284,6 @@ export const generateApiAccessToken = async(req, res)=>{
             accessToken
         })
     }catch (err){
-        console.log(err)
-        return res.status(500).json({
-            success: false,
-            message: "Something went wrong!"
-        })
+       next(err);
     }
 }

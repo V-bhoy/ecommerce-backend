@@ -1,6 +1,6 @@
 import * as CategoryModel from "../models/category.model.js";
 
-export const createCategory = async(req, res)=>{
+export const createCategory = async(req, res, next)=>{
     const {name} = req.body;
     if(!name){
         return res.status(400).json({
@@ -22,15 +22,11 @@ export const createCategory = async(req, res)=>{
             message: `Category created successfully with id ${id}`
         })
     }catch(err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Internal server error!"
-        })
+       next(err);
     }
 }
 
-export const getAllCategories = async(req,res)=>{
+export const getAllCategories = async(req,res, next)=>{
     try{
         const data = await CategoryModel.findAll();
         return res.status(200).json({
@@ -38,10 +34,6 @@ export const getAllCategories = async(req,res)=>{
             categories: data
         })
     }catch(err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Internal server error!"
-        })
+        next(err);
     }
 }

@@ -2,7 +2,7 @@ import * as SubCategoryModel from "../models/subCategory.model.js";
 import * as CategoryModel from "../models/category.model.js"
 import {formatSubCategories} from "../util/format-sub-categories.js";
 
-export const createSubCategory = async(req, res)=>{
+export const createSubCategory = async(req, res, next)=>{
     const {name, categoryId} = req.body;
     if(!name || !categoryId){
         return res.status(400).json({
@@ -31,15 +31,11 @@ export const createSubCategory = async(req, res)=>{
             message: `Sub category created successfully with id ${id}`
         })
     }catch(err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Internal server error!"
-        })
+        next(err);
     }
 }
 
-export const getAllSubCategories = async(req, res)=>{
+export const getAllSubCategories = async(req, res, next)=>{
     try{
         const data = await SubCategoryModel.findAll();
         return res.status(200).json({
@@ -47,10 +43,6 @@ export const getAllSubCategories = async(req, res)=>{
             subCategories: formatSubCategories(data)
         })
     }catch(err){
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            message: "Internal server error!"
-        })
+        next(err);
     }
 }
