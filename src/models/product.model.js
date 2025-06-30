@@ -41,6 +41,7 @@ export const findAllProducts = ({ categoryId, filters = {}, limit, offset, userI
         sizes,
         minPrice,
         maxPrice,
+        rating,
         sortBy,
         search
     } = filters;
@@ -87,6 +88,9 @@ export const findAllProducts = ({ categoryId, filters = {}, limit, offset, userI
     if (typeof inStock === "boolean") {
         query.havingRaw(`SUM(pv.qty) ${inStock ? '>' : '='} 0`);
     }
+    if (rating) {
+        query.havingRaw("ROUND(AVG(r.rating), 0) >= ?", [rating]);
+    }
     if (sortBy) {
         const value = sortBy.name + "_" + sortBy.value;
         switch (value) {
@@ -121,11 +125,14 @@ export const countAllProducts = ({ categoryId, filters = {}, userId = null, only
         minPrice,
         maxPrice,
         sizes,
+        rating,
         search
     } = filters;
 
     const query = db("products as p")
-        .leftJoin("product_variants as pv", "p.id", "pv.product_id");
+        .leftJoin("product_variants as pv", "p.id", "pv.product_id")
+        .leftJoin("reviews as r","p.id",  "r.product_id")
+        .groupBy("p.id");
 
     if (userId) {
         query.leftJoin("wishlist as w", function () {
@@ -157,6 +164,10 @@ export const countAllProducts = ({ categoryId, filters = {}, userId = null, only
         query.groupBy("p.id");
         query.havingRaw(`SUM(pv.qty) ${inStock ? ">" : "="} 0`);
         return db.from(query.as("sub")).count("* as count");
+    }
+
+    if (rating) {
+        query.havingRaw("ROUND(AVG(r.rating), 0) >= ?", [rating]);
     }
 
     return query.countDistinct("p.id as count");

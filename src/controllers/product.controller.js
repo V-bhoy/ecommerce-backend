@@ -277,6 +277,7 @@ export const getAllProducts = async(req, res)=>{
        const totalCount = +(countResult?.count || 0);
        const totalPages = Math.ceil(totalCount/limit);
 
+
        return res.status(200).json({
            success: true,
            products: formatProducts(data),
