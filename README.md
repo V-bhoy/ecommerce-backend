@@ -42,6 +42,7 @@ project-root/
 
 ## 🚀 Features
 
+```plaintext
 ✅ User authentication with JWT with OTP verification
 ✅ Products, categories & subcategories CRUD operations
 ✅ Wishlist & reviews system
@@ -51,15 +52,18 @@ project-root/
 ✅ Database migrations & seeds with Knex
 ✅ Custom error handling middleware
 ✅ Modular MVC architecture
+```
 
 ## ⚙️ Setup
 
+```plaintext
 1️⃣ Clone the repository
 2️⃣ Install dependencies
 3️⃣ Configure environment using .env
 4️⃣ Run database migrations - npx knex migrate:latest --env development
 5️⃣ Run seed files (optional) - npx knex seed:run --env development
 6️⃣ Start the server - npm run dev
+```
 
 ---
 
@@ -70,8 +74,6 @@ The application uses a **PostgreSQL relational database** with a normalized sche
 ### ER Diagram
 
 ![ER Diagram](./docs/er-diagram.png)
-
-*(Add your actual ER diagram image to a `/docs` folder in your project and update the path above!)*
 
 ### Main Tables
 
@@ -103,3 +105,10 @@ The application uses a **PostgreSQL relational database** with a normalized sche
 All foreign keys use **`ON DELETE CASCADE`** where appropriate.
 
 ---
+
+## 📬 Contact
+
+```plaintext
+Made with ❤️ by Vaishali Bhoyar
+Feel free to contribute or open issues!
+```
