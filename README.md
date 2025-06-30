@@ -112,3 +112,19 @@ All foreign keys use **`ON DELETE CASCADE`** where appropriate.
 Made with ❤️ by Vaishali Bhoyar
 Feel free to contribute or open issues!
 ```
+
+---
+
+## ⚠️ License Notice
+
+This project is **proprietary and protected** by copyright law.
+
+**Use case:** This repository is shared publicly **only** to showcase my work and skills as part of my resume/portfolio.
+
+**Restrictions:** You may **not** copy, reuse, modify, or distribute any part of this project without **my written permission**.
+
+If you wish to discuss usage, collaboration, or have any questions, please contact me: vaishubhoyar004@gmail.com
+
+---
+
+© 2025 Vaishali Bhoyar. All rights reserved.
