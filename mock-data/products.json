@@ -1795,27 +1795,6 @@
     "sub_category_id": 17
   },
   {
-    "id": "74",
-    "title": "Classic Dial Watch",
-    "image_url": "https://cdn.pixabay.com/photo/2022/09/05/18/48/watch-7434946_1280.jpg",
-    "short_info": "Classic modern dial watch for men",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-    "mrp": "4500",
-    "discount": "10",
-    "details": {
-      "care": "Individual maintenance",
-      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-      "sizeAndFit": "Model is 5'6 in height"
-    },
-    "specifications": null,
-    "is_featured": false,
-    "sales_count": "0",
-    "created_at": "2025-06-21 07:25:17.27313+00",
-    "updated_at": "2025-06-21 07:25:17.27313+00",
-    "category_id": 5,
-    "sub_category_id": 17
-  },
-  {
     "id": "75",
     "title": "Classic Golden Watch",
     "image_url": "https://cdn.pixabay.com/photo/2021/08/10/14/56/man-6536156_1280.jpg",

@@ -105,8 +105,6 @@ export const getAllProductsByCategory = async(req, res, next)=>{
         const totalCount = +(countResult?.count || 0);
         const totalPages = Math.ceil(totalCount/limit);
 
-        console.log(category, categoryExists ,data.length, countResult);
-
         return res.status(200).json({
             success: true,
             products: formatProducts(data),
