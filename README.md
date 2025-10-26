@@ -65,6 +65,88 @@ project-root/
 6️⃣ Start the server - npm run dev
 ```
 
+## Env Variables
+```
+ DB_HOST: db
+ DB_USER: postgres
+ DB_PASSWORD: your_password
+ DB_NAME: your_db_name
+ DB_PORT: 5432
+ ACCESS_TOKEN_SECRET: your_access_token_secret
+ REFRESH_TOKEN_SECRET: your_refresh_token_secret
+ SMTP_HOST: smtp.gmail.com
+ SMTP_USER: your_smtp_user
+ SMTP_PASS: your_smtp_pass
+ RAZORPAY_KEY_ID: your_key_id
+ RAZORPAY_KEY_SECRET: your_key_secret
+ CLIENT_URL: your_client_url
+```
+
+## 💻 Test the API Locally (cURL Examples)
+
+All endpoints assume backend runs on `http://localhost:8080/api`
+For protected routes, replace `Authorization: ••••••` with your JWT access token.
+
+
+### Register User
+curl --location 'http://localhost:8080/api/auth/register' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "firstName": "Vaishali",
+    "lastName": "Bhoyar",
+    "email": "vaishubhoyar004@gmail.com",
+    "password": "vaishali123"
+}'
+### Request Otp
+curl --location 'http://localhost:8080/api/auth/request-otp' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email": "vaishubhoyar004@gmail.com"
+}'
+### Verify Otp
+curl --location 'http://localhost:8080/api/auth/verify-otp' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email": "vaishubhoyar004@gmail.com",
+    "otp": "991130"
+}'
+### Generate Access Token
+curl --location 'http://localhost:8080/api/auth/access-token' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email": "vaishubhoyar004@gmail.com"
+}'
+### Get Products
+curl --location 'http://localhost:8080/api/categories/all'
+### Get Product Details
+curl --location 'http://localhost:8080/api/products/1?viewOnly=true' \
+--data ''
+### Create Order
+curl --location 'http://localhost:8080/api/orders/create' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: ••••••' \
+--data '{
+    "items": [{
+        "id": 11,
+       "cartQty": 1,
+       "sku_id": "58e9e7c2-7beb-45ca-84c8-000cfb191402",
+       "discount": 10,
+       "mrp": 4500,
+       "priceAfterDiscount" : 4050
+     }]
+}'
+### Verify Payment
+curl --location 'http://localhost:8080/api/orders/payment/verify' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: ••••••' \
+--data '{
+    "razorpay_order_id": "order_QmXrIltoMo9oSW",
+    "razorpay_payment_id": "pay_QmXsZ55hNbIpD6",
+    "razorpay_signature" : "78c66d9e7d7c5c0bff39119b53f87b9f0457bdd4ec7c69dd9aa4d6b35c7636f6"
+}'
+
+...
+
 ---
 
 ## 🗃️ Database Design
