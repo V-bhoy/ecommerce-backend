@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  backend:
+    build: .
+    container_name: ecommerce-backend
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      DB_HOST: db
+      DB_USER: postgres
+      DB_PASSWORD: your_password
+      DB_NAME: your_db_name
+      DB_PORT: 5432
+      ACCESS_TOKEN_SECRET: your_access_token_secret
+      REFRESH_TOKEN_SECRET: your_refresh_token_secret
+      SMTP_HOST: smtp.gmail.com
+      SMTP_USER: your_smtp_user
+      SMTP_PASS: your_smtp_pass
+      RAZORPAY_KEY_ID: your_key_id
+      RAZORPAY_KEY_SECRET: your_key_secret
+      CLIENT_URL: your_client_url
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15
+    container_name: ecommerce-db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: your_password
+      POSTGRES_DB: your_db_name
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
