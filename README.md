@@ -83,12 +83,13 @@ project-root/
 ```
 
 ## 💻 Test the API Locally (cURL Examples)
-
+```
 All endpoints assume backend runs on `http://localhost:8080/api`
 For protected routes, replace `Authorization: ••••••` with your JWT access token.
-
+```
 
 ### Register User
+```
 curl --location 'http://localhost:8080/api/auth/register' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -97,31 +98,43 @@ curl --location 'http://localhost:8080/api/auth/register' \
     "email": "vaishubhoyar004@gmail.com",
     "password": "vaishali123"
 }'
+```
 ### Request Otp
+```
 curl --location 'http://localhost:8080/api/auth/request-otp' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "email": "vaishubhoyar004@gmail.com"
 }'
+```
 ### Verify Otp
+```
 curl --location 'http://localhost:8080/api/auth/verify-otp' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "email": "vaishubhoyar004@gmail.com",
     "otp": "991130"
 }'
+```
 ### Generate Access Token
+```
 curl --location 'http://localhost:8080/api/auth/access-token' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "email": "vaishubhoyar004@gmail.com"
 }'
+```
 ### Get Products
+```
 curl --location 'http://localhost:8080/api/categories/all'
+```
 ### Get Product Details
+```
 curl --location 'http://localhost:8080/api/products/1?viewOnly=true' \
 --data ''
+```
 ### Create Order
+```
 curl --location 'http://localhost:8080/api/orders/create' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: ••••••' \
@@ -135,7 +148,9 @@ curl --location 'http://localhost:8080/api/orders/create' \
        "priceAfterDiscount" : 4050
      }]
 }'
+```
 ### Verify Payment
+```
 curl --location 'http://localhost:8080/api/orders/payment/verify' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: ••••••' \
@@ -146,7 +161,7 @@ curl --location 'http://localhost:8080/api/orders/payment/verify' \
 }'
 
 ...
-
+```
 ---
 
 ## 🗃️ Database Design
